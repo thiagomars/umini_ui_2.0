@@ -1,0 +1,110 @@
+[
+    {
+        "id": 30670,
+        "state": "ACRE"
+    },
+    {
+        "id": 32868,
+        "state": "ALAGOAS"
+    },
+    {
+        "id": 65129,
+        "state": "AMAPÁ"
+    },
+    {
+        "id": 38744,
+        "state": "AMAZONAS"
+    },
+    {
+        "id": 14780,
+        "state": "BAHIA"
+    },
+    {
+        "id": 42518,
+        "state": "CEARÁ"
+    },
+    {
+        "id": 19243,
+        "state": "DISTRITO FEDERAL"
+    },
+    {
+        "id": 9194,
+        "state": "ESPÍRITO SANTO"
+    },
+    {
+        "id": 12672,
+        "state": "GOIÁS"
+    },
+    {
+        "id": 37434,
+        "state": "MARANHÃO"
+    },
+    {
+        "id": 15202,
+        "state": "MATO GROSSO"
+    },
+    {
+        "id": 5138,
+        "state": "MATO GROSSO DO SUL"
+    },
+    {
+        "id": 6433,
+        "state": "MINAS GERAIS"
+    },
+    {
+        "id": 36634,
+        "state": "PARÁ"
+    },
+    {
+        "id": 40979,
+        "state": "PARAÍBA"
+    },
+    {
+        "id": 3538,
+        "state": "PARANÁ"
+    },
+    {
+        "id": 36354,
+        "state": "PERNAMBUCO"
+    },
+    {
+        "id": 31500,
+        "state": "PIAUÍ"
+    },
+    {
+        "id": 6075,
+        "state": "RIO DE JANEIRO"
+    },
+    {
+        "id": 1230,
+        "state": "RIO GRANDE DO NORTE"
+    },
+    {
+        "id": 2,
+        "state": "RIO GRANDE DO SUL"
+    },
+    {
+        "id": 24087,
+        "state": "RONDÔNIA"
+    },
+    {
+        "id": 68862,
+        "state": "RORAIMA"
+    },
+    {
+        "id": 1748,
+        "state": "SANTA CATARINA"
+    },
+    {
+        "id": 4463,
+        "state": "SÃO PAULO"
+    },
+    {
+        "id": 29513,
+        "state": "SERGIPE"
+    },
+    {
+        "id": 25394,
+        "state": "TOCANTINS"
+    }
+]

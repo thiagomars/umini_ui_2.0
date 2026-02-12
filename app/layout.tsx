@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { keywords } from "@/utils/keywords";
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
+import SmoothScrolling from "@/components/SmoothScrolling";
+import Footer from "@/sections/footer";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -30,10 +32,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br">
-            <body className={`${geistInter.variable}`} >
-                <Header />
+            <body className={`${geistInter.variable} scroll-smooth`}>
+                <Navbar />
                 {children}
+                <Footer />
             </body>
-        </html>
+        </html >
     );
 }

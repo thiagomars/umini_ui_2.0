@@ -4,9 +4,8 @@ import { Typing } from "@/components/typing";
 
 export default function HomePage() {
 
-
     return (
-        <section className="min-h-dvh">
+        <section id="home" className="min-h-dvh">
             <div className="relative w-full min-h- flex flex-col justify-center">
                 <video
                     autoPlay
@@ -15,7 +14,6 @@ export default function HomePage() {
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover"
                     webkit-playsinline="true"
-
                 >
                     <source src="/video-back-home.mp4" type="video/mp4" />
                 </video>
@@ -26,7 +24,7 @@ export default function HomePage() {
                     <div className="text-white text-center lg:text-left relative mx-10 lg:ml-20 lg:w-1/2 flex flex-col justify-center lg:gap-6 gap-10 min-h-dvh mb-10 lg:mb-0">
                         <div className="drop-shadow-lg font-bold text-5xl lg:text-6xl lg:leading-16 leading-14 mt-24 lg:mt-14">
                             <h1>Engenharia Elétrica e <br />Fotovoltaica com</h1>
-                            <Typing texts={["Humanização. ", "Economia. ", "Confiança. "]} loop typeSpeed={160} className="text-amber-500 lg:flex lg:justify-start justify-center" />
+                            <Typing texts={["Humanização. ", "Economia. ", "Confiança. "]} loop typeSpeed={160} className="text-primary -500 lg:flex lg:justify-start justify-center" />
                         </div>
 
                         <p className="text-2xl lg:w-1/2 drop-shadow-lg">Soluções que geram economia, confiança e desempenho.</p>
