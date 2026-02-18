@@ -3,8 +3,45 @@ import Button from "@/components/button";
 import Section from "@/components/section";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-
 export default function Duvidas() {
+
+    const dados = [
+        {
+            titulo: 'Por que centralizar meus projetos com a Umini?',
+            descricao: `Não somos apenas desenhistas de projetos, somos o seu departamento de engenharia externo. Diferente de autônomos, oferecemos uma Plataforma de Gestão Exclusiva onde você centraliza documentos e acompanha o status em tempo real. Além disso, oferecemos todo o suporte técnico pré-venda, com modelagens 3D e análises tarifárias, além do suporte técnico pós-vendas, com alteração de lista de rateios, trocas de titularidade e demais demandas comerciais* <br/><br/><i>*A depender da concessionária</i>`
+        },
+        {
+            titulo: 'Quais são os prazos de entrega dos projetos?',
+            descricao: `Prezamos pela qualidade técnica para evitar reprovas. Nossos prazos padrão para protocolo são: </br>
+            
+            <b>Microgeração (Residencial/Pequeno Comércio)</b>: Até 5 dias úteis após o recebimento completo da documentação.</br>
+            <b>Minigeração (Grandes Usinas/Comercial)</b>: Até 10 dias úteis, devido à complexidade da análise e dimensionamento.</br>`
+        },
+        {
+            titulo: 'Existem condições especiais para integradores recorrentes?',
+            descricao: `Sim! Valorizamos a parceria de longo prazo. Temos a Tabela de Parceiro Umini, que oferece descontos progressivos baseados no seu volume mensal de obras:
+            <br/> <div style="margin:5px"></div>
+            - 5 a 9 projetos/mês: 5% OFF
+            <br/>
+            - 10 a 14 projetos/mês: 10% OFF
+            <br/>
+            - 15 a 19 projetos/mês: 15% OFF
+            <br/>
+            - Acima de 20 projetos/mês: 20% OFF`
+        },
+        {
+            titulo: 'Vocês atendem em quais estados/concessionárias?',
+            descricao: `Atuamos em todo o território nacional. Nossa equipe de engenharia está atualizada com as normas técnicas e particularidades de todas as concessionárias de energia do Brasil, garantindo que seu projeto seja aprovado independente da localização da obra.`
+        },
+        {
+            titulo: 'A plataforma de gestão tem custo adicional?',
+            descricao: `Não. O acesso à Plataforma Umini é uma ferramenta gratuita para todos os nossos clientes. Desenvolvemos o sistema para acabar com a desorganização de arquivos no WhatsApp e garantir que você tenha o histórico completo de todas as suas homologações em um só lugar.`
+        },
+        {
+            titulo: 'E se houver alguma exigência ou reprova da concessionária?',
+            descricao: `Nossa taxa de aprovação é altíssima devido à nossa pré-análise. Porém, caso ocorra alguma nota técnica por parte da concessionária referente ao projeto enviado, nossa equipe realiza as correções e o re-protocolo imediatamente, garantindo a aprovação final da sua obra.`
+        },
+    ]
 
     return (
         <section id="duvidas" className="relative md:min-h-screen">
@@ -22,45 +59,19 @@ export default function Duvidas() {
                 <Accordion
                     type="single"
                     collapsible
-                    defaultValue="quais"
+                    defaultValue="question_3"
                     className="text-white lg:text-gray-600"
                 >
-                    <AccordionItem value="quais">
-                        <AccordionTrigger>Quais serviços nós oferecemos?</AccordionTrigger>
-                        <AccordionContent>
-                            Trabalhamos com projetos fotovoltaicos, projetos de subestações elétricas, centros de medição, SPDA, eletrificação de loteamentos e projetos elétricos internos. Além disso, também oferecemos gestão de faturas (mercado cativo e livre) e com análises tarifárias. Para saber mais, clique aqui.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="returns">
-                        <AccordionTrigger>O que é a Umini?</AccordionTrigger>
-                        <AccordionContent>
-                            Returns accepted within 30 days. Items must be unused and in original
-                            packaging. Refunds processed within 5-7 business days.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="support">
-                        <AccordionTrigger>Quanto tempo leva para aprovar um projeto?</AccordionTrigger>
-                        <AccordionContent>
-                            Reach us via email, live chat, or phone. We respond within 24 hours
-                            during business days.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="aaaaa">
-                        <AccordionTrigger>Como fazer para entrar em contato com a Umini?</AccordionTrigger>
-                        <AccordionContent>
-                            Reach us via email, live chat, or phone. We respond within 24 hours
-                            during business days. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia iure, ea autem numquam accusamus hic excepturi eaque eligendi iusto repudiandae, veniam, ab sit porro aperiam. Repellendus similique id explicabo.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="aadsaaaa">
-                        <AccordionTrigger>Outra dúvida aqui</AccordionTrigger>
-                        <AccordionContent>
-                            Reach us via email, live chat, or phone. We respond within 24 hours
-                            during business days. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur natus eligendi, sit sed perferendis optio, voluptatem inventore est quisquam non. Magnam eligendi nihil nulla enim perferendis quam totam harum. Ipsum mollitia iure, ea autem numquam accusamus hic excepturi eaque eligendi iusto repudiandae, veniam, ab sit porro aperiam. Repellendus similique id explicabo.
-                        </AccordionContent>
-                    </AccordionItem>
+                    {dados?.map((value, index) => (
+                        <AccordionItem value={"question_" + index}>
+                            <AccordionTrigger>{value.titulo}</AccordionTrigger>
+                            <AccordionContent>
+                                <div className="text-justify" dangerouslySetInnerHTML={{ __html: value.descricao }}></div>
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
                 </Accordion>
             </Section>
-        </section>
+        </section >
     )
 }

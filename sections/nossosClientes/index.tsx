@@ -27,7 +27,6 @@ export default function NossosClientes() {
                             </p>
                         </BoxView>
 
-
                         <BoxView delay={600}>
                             <Button className="w-fit text-white">
                                 Sobre a UMINI
