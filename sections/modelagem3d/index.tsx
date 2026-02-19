@@ -10,7 +10,7 @@ export default function Modelagem3d() {
             <Section>
                 <div className="px-4 md:px-28 grid grid-cols-1 lg:grid-cols-2 gap-4 pb-28">
                     <div className="flex flex-col gap-4 lg:row-span-2">
-                        <div className="rounded-[30px] p-8 bg-[#E38405] text-white flex flex-col justify-center h-1/3">
+                        <div className="rounded-[30px] p-8 bg-[#E38405] text-white flex flex-col justify-center md:h-1/3">
                             <h1 className="text-4xl font-bold mb-4">Modelagem 3D</h1>
                             <p className="text-sm leading-relaxed text-left">
                                 Transforme propostas em vendas garantidas. Com nossas modelagens 3D,

@@ -9,9 +9,9 @@ export default function Servicos() {
             <Section>
                 <div className="grid lg:grid-cols-2 lg:gap-2 gap-12 px-8 xl:px-14 text-gray-700 items-center">
                     <div className="space-y-8 sm:px-16 xl:px-24 min-h-3/4">
-                        <h2 className="text-4xl lg:text-5xl font-bold">Nossos serviços:</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Nossos serviços:</h2>
 
-                        <ul className="list-image-[url(/icon-ul.png)] list-inside space-y-2 lg:space-y-1 text-lg">
+                        <ul className="list-image-[url(/icon-ul.png)] list-inside space-y-2 lg:space-y-1 md:text-lg">
                             <li>Projetos Fotovoltaicos</li>
                             <li>Projetos de Subestações Elétricas</li>
                             <li>Projetos de Centros de Medição</li>

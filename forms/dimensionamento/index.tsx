@@ -17,7 +17,7 @@ export default function DimensionamentoForm() {
         <div className="flex justify-center items-center">
             <div className="bg-primary w-full rounded-[40px] p-10 text-white shadow-xl">
 
-                <h2 className="text-center text-3xl font-bold mb-8">
+                <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
                     Dimensionamento rápido
                 </h2>
 

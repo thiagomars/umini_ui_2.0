@@ -47,7 +47,7 @@ export default function Duvidas() {
         <section id="duvidas" className="relative md:min-h-screen">
             <div className="absolute lg:w-5/12 w-full -z-10 top-0 left-0 h-full bg-primary mt-1 rounded-t-4xl lg:rounded-none lg:rounded-tr-[60px]"></div>
 
-            <Section className="py-14 lg:py-32 px-8 lg:px-20 grid lg:grid-cols-2 gap-10">
+            <Section className="py-14 lg:py-32 px-10 lg:px-20 grid lg:grid-cols-2 gap-10">
                 <div className="flex flex-1 flex-col justify-between z-10 lg:h-[60vh]">
                     <div className="h-full">
                         <h2 className="text-white lg:text-7xl text-5xl text-center lg:text-left font-bold text-wrap lg:w-min lg:leading-20 drop-shadow-md">Algumas dúvidas frequentes:</h2>
@@ -63,7 +63,7 @@ export default function Duvidas() {
                     className="text-white lg:text-gray-600"
                 >
                     {dados?.map((value, index) => (
-                        <AccordionItem value={"question_" + index}>
+                        <AccordionItem key={index + "item"} value={"question_" + index}>
                             <AccordionTrigger>{value.titulo}</AccordionTrigger>
                             <AccordionContent>
                                 <div className="text-justify" dangerouslySetInnerHTML={{ __html: value.descricao }}></div>

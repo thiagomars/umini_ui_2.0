@@ -44,9 +44,9 @@ export default function Parceiros() {
             <h1 className="w-full text-center my-6 text-2xl">Nossos parceiros:</h1>
 
             <div className="bg-gray-100 py-10 hidden md:block">
-                <Slider {...settings}>
+                <Slider {...settings} key="slider_1">
                     {Array.from({ length: 12 }, (_, i) => (
-                        <div key={i + 1} className="px-8 outline-none">
+                        <div key={i + 1 + "img1"} className="px-8 outline-none">
                             <div className="relative h-32 w-full">
                                 <Image
                                     src={`/parceiros/parceiro_${i + 1}.png`}
@@ -62,9 +62,9 @@ export default function Parceiros() {
             </div>
 
             <div className="bg-gray-100 py-10 md:hidden block space-y-10">
-                <Slider {...settings}>
+                <Slider {...settings} key="slider_2">
                     {Array.from({ length: 6 }, (_, i) => (
-                        <div key={i + 1} className="px-8 outline-none">
+                        <div key={i + 1 + "img2"} className="px-8 outline-none">
                             <div className="relative h-32 w-full">
                                 <Image
                                     src={`/parceiros/parceiro_${i + 1}.png`}
@@ -78,9 +78,9 @@ export default function Parceiros() {
                     ))}
                 </Slider>
 
-                <Slider {...settings} rtl>
+                <Slider {...settings} rtl key="slider_3">
                     {Array.from({ length: 6 }, (_, i) => (
-                        <div key={i + 7} className="px-8 outline-none">
+                        <div key={i + 7 + "img3"} className="px-8 outline-none">
                             <div className="relative h-32 w-full">
                                 <Image
                                     src={`/parceiros/parceiro_${i + 7}.png`}
