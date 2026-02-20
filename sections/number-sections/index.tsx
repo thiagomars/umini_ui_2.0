@@ -21,10 +21,21 @@ export default function NumberSections() {
                                 <Image className="z-10" priority src="/fotovoltaicos.png" alt="Umini Logo" width={100} height={100} />
                             </div>
                             <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                                <span className="font-black text-5xl sm:text-7xl">+</span>
-                                <ScrollCounter incrementar valor={2000} duracao={3000} />
+                                {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
+                                <ScrollCounter incrementar valor={2626} duracao={3000} />
                             </div>
                             <p className="text-xl sm:text-2xl">Projetos fotovoltaicos</p>
+                        </div>
+
+                        <div className="xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
+                            <div className="rounded-full size-14 shadow-md">
+                                <Image className="z-10" priority src="/homologados.png" alt="Umini Logo" width={100} height={100} />
+                            </div>
+                            <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
+                                {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
+                                <ScrollCounter incrementar valor={18474} duracao={3000} />
+                            </div>
+                            <p className="text-xl sm:text-2xl">kW homologados</p>
                         </div>
 
                         <div className="xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
@@ -32,33 +43,22 @@ export default function NumberSections() {
                                 <Image className="z-10" priority src="/subestacao.png" alt="Umini Logo" width={100} height={100} />
                             </div>
                             <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                                <span className="font-black text-5xl sm:text-7xl">+</span>
-                                <ScrollCounter incrementar valor={100} duracao={3000} />
+                                {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
+                                <ScrollCounter incrementar valor={120} duracao={3000} />
                             </div>
-                            <p className="text-xl sm:text-2xl">Projetos de subestação</p>
-                        </div>
-
-                        <div className="xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
-                            <div className="rounded-full size-14 shadow-md">
-                                <Image className="z-10" priority src="/economia.png" alt="Umini Logo" width={100} height={100} />
-                            </div>
-                            <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                                <span className="font-black text-5xl sm:text-7xl">+</span>
-                                <ScrollCounter incrementar valor={1} duracao={1000} />
-                                <span className="font-black">M</span>
-                            </div>
-                            <p className="text-xl sm:text-2xl">de reais economizados</p>
+                            <p className="text-xl sm:text-2xl">Projetos de Elétricos</p>
                         </div>
 
                         <div className="lg:col-start-2 xl:col-start-auto xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
                             <div className="rounded-full size-14 shadow-md">
-                                <Image className="z-10" priority src="/homologados.png" alt="Umini Logo" width={100} height={100} />
+                                <Image className="z-10" priority src="/economia.png" alt="Umini Logo" width={100} height={100} />
                             </div>
                             <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                                <span className="font-black text-5xl sm:text-7xl">+</span>
-                                <ScrollCounter incrementar valor={10000} duracao={3000} />
+                                {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
+                                <ScrollCounter incrementar valor={280} duracao={3000} />
+                                <span className="font-bold">K</span>
                             </div>
-                            <p className="text-xl sm:text-2xl">kW homologados</p>
+                            <p className="text-xl sm:text-2xl">de reais economizados com análises tarifárias</p>
                         </div>
                     </div>
                 </>

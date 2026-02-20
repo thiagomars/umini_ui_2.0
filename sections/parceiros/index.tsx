@@ -45,7 +45,7 @@ export default function Parceiros() {
 
             <div className="bg-gray-100 py-10 hidden md:block">
                 <Slider {...settings} key="slider_1">
-                    {Array.from({ length: 12 }, (_, i) => (
+                    {Array.from({ length: 13 }, (_, i) => (
                         <div key={i + 1 + "img1"} className="px-8 outline-none">
                             <div className="relative h-32 w-full">
                                 <Image
@@ -63,7 +63,7 @@ export default function Parceiros() {
 
             <div className="bg-gray-100 py-10 md:hidden block space-y-10">
                 <Slider {...settings} key="slider_2">
-                    {Array.from({ length: 6 }, (_, i) => (
+                    {Array.from({ length: 7 }, (_, i) => (
                         <div key={i + 1 + "img2"} className="px-8 outline-none">
                             <div className="relative h-32 w-full">
                                 <Image

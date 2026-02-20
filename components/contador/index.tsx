@@ -3,12 +3,19 @@
 import { useState, useEffect, useRef } from 'react';
 
 interface ScrollCounterProps {
-    valor: number;
+    valor: number; // Accepts decimal values
     incrementar: boolean; // true = 0 para valor; false = valor para 0
     duracao?: number; // em milissegundos (padrão: 2000ms)
     delay?: number; // em milissegundos (padrão: 0ms)
     className?: string; // para estilização extra
 }
+
+// Helper function to determine the number of decimal places for a number
+const getDecimalPlaces = (num: number): number => {
+    const numStr = num.toString();
+    const decimalPart = numStr.split('.')[1];
+    return decimalPart ? 2 : 0;
+};
 
 export default function ScrollCounter({
     valor,
@@ -20,6 +27,10 @@ export default function ScrollCounter({
     const [displayValue, setDisplayValue] = useState(incrementar ? 0 : valor);
     const elementRef = useRef<HTMLSpanElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+
+    // Determine the number of decimal places based on the 'valor' prop
+    // This will be used for formatting the displayed number.
+    const decimalPlaces = getDecimalPlaces(valor);
 
     useEffect(() => {
         const element = elementRef.current;
@@ -60,14 +71,17 @@ export default function ScrollCounter({
 
                 const easeOutProgress = 1 - Math.pow(1 - progress, 3);
 
-                const currentCount = Math.floor(
-                    startValue + (endValue - startValue) * easeOutProgress
-                );
+                // Calculate current value without Math.floor to allow decimals
+                const currentCount = startValue + (endValue - startValue) * easeOutProgress;
 
                 setDisplayValue(currentCount);
 
                 if (progress < 1) {
                     animationFrameId = window.requestAnimationFrame(step);
+                } else {
+                    // Ensure the final value is exactly the target value to avoid
+                    // potential floating point inaccuracies at the very end of the animation.
+                    setDisplayValue(endValue);
                 }
             };
 
@@ -78,11 +92,18 @@ export default function ScrollCounter({
             clearTimeout(timeoutId);
             window.cancelAnimationFrame(animationFrameId);
         };
-    }, [isVisible, valor, incrementar, duracao, delay]);
+    }, [isVisible, valor, incrementar, duracao, delay]); // Dependencies include 'valor' to restart animation if it changes
+
+    // Format the displayValue using Intl.NumberFormat for thousands separators and decimal places
+    // Using 'pt-BR' locale for comma as decimal separator and dot as thousands separator.
+    const formattedDisplayValue = new Intl.NumberFormat('pt-BR', {
+        minimumFractionDigits: decimalPlaces, // Ensure correct number of decimal places are always shown
+        maximumFractionDigits: decimalPlaces, // Do not show more decimal places than original valor
+    }).format(displayValue);
 
     return (
         <span ref={elementRef} className={className}>
-            {displayValue}
+            {formattedDisplayValue}
         </span>
     );
 }
