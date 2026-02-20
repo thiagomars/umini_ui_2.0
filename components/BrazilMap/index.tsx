@@ -98,16 +98,16 @@ const BrazilMap = () => {
                 <ReactECharts
                     option={getOption()}
                     style={{ height: mobile ? '50vh' : '50vw', maxHeight: '80vh', width: '100%' }}
-                // onEvents={{
-                //     'click': (params: any) => {
-                //         if (item == params.name && viewBox)
-                //             setViewBox(false)
-                //         else
-                //             setViewBox(true)
+                    onEvents={{
+                        'click': (params: any) => {
+                            if (item == params.name && viewBox)
+                                setViewBox(false)
+                            else
+                                setViewBox(true)
 
-                //         setItem(params.name)
-                //     }
-                // }}
+                            setItem(params.name)
+                        }
+                    }}
                 />
 
                 <p className="z-10 w-1/2 absolute bottom-2 right-0 text-right text-xs">Dados atualizado em 19/02/2026</p>
