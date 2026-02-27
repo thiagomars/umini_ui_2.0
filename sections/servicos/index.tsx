@@ -1,3 +1,4 @@
+import BoxView from "@/components/boxView";
 import Button from "@/components/button";
 import Section from "@/components/section";
 import DimensionamentoForm from "@/forms/dimensionamento";
@@ -12,20 +13,36 @@ export default function Servicos() {
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Nossos serviços:</h2>
 
                         <ul className="list-image-[url(/icon-ul.png)] list-inside space-y-2 lg:space-y-1 md:text-lg">
-                            <li>Projetos Fotovoltaicos</li>
-                            <li>Projetos de Subestações Elétricas</li>
-                            <li>Projetos de Centros de Medição</li>
-                            <li>Projetos de SPDA</li>
-                            <li>Projetos de Eletrificação de Loteamentos</li>
-                            <li>Projetos Elétricos Internos</li>
-                            <li>Gestão de Faturas- Mercado Cativo e Mercado Livre</li>
-                            <li>Análises Tarifárias</li>
+                            <BoxView>
+                                <li>Projetos Fotovoltaicos</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Projetos de Subestações Elétricas</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Projetos de Centros de Medição</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Projetos de SPDA</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Projetos de Eletrificação de Loteamentos</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Projetos Elétricos Internos</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Gestão de Faturas- Mercado Cativo e Mercado Livre</li>
+                            </BoxView>
+                            <BoxView>
+                                <li>Análises Tarifárias</li>
+                            </BoxView>
                         </ul>
 
                         <Button className="text-white">Agendar reunião</Button>
                     </div>
 
-                    <div className="w-full sm:max-w-md lg:max-w-full lg:w-5/6 xl:w-3/4 mx-auto">
+                    <div className="w-full sm:max-w-md lg:max-w-full lg:w-11/12 xl:w-4/5 mx-auto">
                         <DimensionamentoForm />
                     </div>
                 </div>

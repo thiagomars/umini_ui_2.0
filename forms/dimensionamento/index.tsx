@@ -2,9 +2,11 @@
 
 import Button from '@/components/button';
 import { MaskedInput, NumericInput, SelectInput } from '@/components/input';
-import { useState } from 'react';
-import listaEstados from '../../database/estados.json'
-import listaCidades from '../../database/cidades.json'
+import { useEffect, useState } from 'react';
+import listaEstados from '@/database/estados.json';
+import listaCidades from '@/database/cidades.json';
+import listaPvout from '@/database/pvout.json';
+import { converterDecimal } from '@/utils/decimal';
 
 export default function DimensionamentoForm() {
 
@@ -12,6 +14,64 @@ export default function DimensionamentoForm() {
     const [cep, setCep] = useState<number>();
     const [estado, setEstado] = useState<string>("");
     const [cidade, setCidade] = useState<string>("");
+
+    const [resultadoPotencia, setResultadoPotencia] = useState<number>(0);
+    const [resultadoGeracao, setResultadoGeracao] = useState<number>(0);
+
+    const handleCalcular = () => {
+        if (!consumo || !cidade) {
+            alert("Por favor, preencha o consumo e selecione a cidade.");
+            return;
+        }
+
+        console.log("consumo: ", consumo);
+        console.log("cidade: ", cidade);
+
+        const dadosSolar = listaPvout.find(x => x.id.toString() === cidade);
+
+        console.log(dadosSolar);
+
+        if (!dadosSolar || !dadosSolar.pvout) {
+            alert("Dados solares não encontrados para esta região.");
+            return;
+        }
+
+        const potenciaKwp = (consumo * 12) / (dadosSolar.pvout ?? 0);
+        const geracaoMensal = potenciaKwp * dadosSolar.pvout / 12;
+
+        console.log("geração mensal: ", geracaoMensal);
+        console.log("potência kwp: ", potenciaKwp);
+
+        setResultadoPotencia(potenciaKwp + (potenciaKwp * 0.12)); // Adicionando 12% de margem
+        setResultadoGeracao(geracaoMensal);
+    };
+
+    useEffect(() => {
+        if (cep?.toString()?.replace(/\D/g, "").length === 8) {
+            fetch(`https://viacep.com.br/ws/${cep.toString().replace(/\D/g, "")}/json/`)
+                .then(res => res.json())
+                .then(data => {
+                    if (!data.erro) {
+                        if (!!data?.estado) {
+                            const estadoEncontrado = listaEstados.find(e => e.state?.toLocaleLowerCase() == data.estado?.toLocaleLowerCase());
+                            setEstado(estadoEncontrado ? estadoEncontrado.id.toString() : "");
+                        }
+
+                        if (!!data?.localidade) {
+                            const cidadeEncontrada = listaCidades.find(c => c.name?.toLocaleLowerCase() == data.localidade?.toLocaleLowerCase());
+                            setCidade(cidadeEncontrada ? cidadeEncontrada.id.toString() : "");
+                        }
+                    } else {
+                        setEstado("");
+                        setCidade("");
+                    }
+                })
+                .catch(error => {
+                    setEstado("");
+                    setCidade("");
+                });
+        }
+    }, [cep])
 
     return (
         <div className="flex justify-center items-center">
@@ -23,7 +83,7 @@ export default function DimensionamentoForm() {
 
                 <form className="space-y-2.5" onSubmit={e => e.preventDefault()}>
                     <NumericInput
-                        label='Consumo médio'
+                        label='Consumo médio da geradora + rateios (kWh/mês)'
                         name='consumo'
                         id='consumo'
                         onChange={setConsumo}
@@ -35,10 +95,10 @@ export default function DimensionamentoForm() {
                         label='CEP'
                         name='cep'
                         id='name'
-                        mask='999.999.999-59'
+                        mask='99.999-999'
                         onChange={setCep}
                         value={cep}
-                        placeholder='000.000.000-00'
+                        placeholder='00.000-000'
                     />
 
                     <SelectInput
@@ -72,21 +132,30 @@ export default function DimensionamentoForm() {
                         ]}
                     />
 
-                    <Button outline className='w-full mt-2'>CALCULAR</Button>
+                    <Button
+                        outline
+                        className='w-full mt-2'
+                        onClick={handleCalcular}
+                    >
+                        CALCULAR
+                    </Button>
                 </form>
 
-                <div className="mt-12 text-center space-y-8">
+                <div className="mt-10 text-center space-y-8">
                     <div>
                         <p className="text-sm font-semibold uppercase tracking-wider">Potência do Sistema</p>
-                        <h3 className="text-4xl lg:text-5xl font-bold">110 kWp</h3>
+                        <h3 className="text-4xl lg:text-5xl font-bold transition-all duration-300">
+                            {resultadoPotencia > 0 ? resultadoPotencia.toFixed(2).replace(".", ",") : "0"} kWp
+                        </h3>
                     </div>
 
                     <div>
                         <p className="text-sm font-semibold uppercase tracking-wider">Geração média mensal</p>
-                        <h3 className="text-5xl lg:text-6xl font-bold">340 kWh</h3>
+                        <h3 className="text-5xl lg:text-6xl font-bold">
+                            {resultadoGeracao > 0 ? resultadoGeracao.toFixed(2).replace(".", ",") : "0"} kWh
+                        </h3>
                     </div>
                 </div>
-
             </div>
         </div>
     );

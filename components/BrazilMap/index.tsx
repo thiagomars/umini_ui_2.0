@@ -23,10 +23,6 @@ const BrazilMap = () => {
     }, []);
 
     const getOption = () => ({
-        // title: {
-        //     text: 'Mapa Interativo do Brasil',
-        //     left: 'center'
-        // },
         tooltip: {
             trigger: mobile ? 'none' : 'item',
             showDelay: 0,
@@ -35,22 +31,19 @@ const BrazilMap = () => {
                 const { name, data } = params;
                 const { qtdFotovoltaico, qtdEletrico, economizados, homologados } = data;
 
-
-                console.log(data)
-
                 return `
-                <div style="padding: 8px;">
-                    <b style="font-size: 16px; color: #DE7E00;">${name}</b>
-                    <br/>
-                    ${qtdFotovoltaico} projetos fotovoltaicos
-                    <br/>
-                    ${qtdEletrico} projetos elétricos
-                    <br/>
-                    R$ ${economizados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} economizados com Gestão Energética
-                    <br/>
-                    <br/>
-                    ${homologados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kW homologados
-                </div>
+                    <div style="padding: 8px;">
+                        <b style="font-size: 16px; color: #DE7E00;">${name}</b>
+                        <br/>
+                        ${qtdFotovoltaico} projetos fotovoltaicos
+                        <br/>
+                        ${qtdEletrico} projetos elétricos
+                        <br/>
+                        R$ ${economizados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} economizados com Gestão Energética
+                        <br/>
+                        <br/>
+                        ${homologados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kW homologados
+                    </div>
                 `;
             },
             backgroundColor: 'rgba(255, 255, 255, 0.85)',
@@ -60,16 +53,6 @@ const BrazilMap = () => {
             padding: [5, 10],
             textStyle: { color: '#000' }
         },
-        // visualMap: {
-        //     left: 'right',
-        //     min: 0,
-        //     max: 100,
-        //     inRange: {
-        //         color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
-        //     },
-        //     text: ['Alto', 'Baixo'],
-        //     calculable: true
-        // },
         series: [
             {
                 name: 'Dados do Estado',
@@ -132,7 +115,6 @@ const BrazilMap = () => {
                             else
                                 setViewBox(true)
 
-                            console.log(params)
                             setItem(params.data)
                         }
                     }}

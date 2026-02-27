@@ -9,7 +9,7 @@ interface TextViewProps {
     delay?: number; // milissegundos
 }
 
-export default function BoxView({ children, className = "", delay = 200 }: TextViewProps) {
+export default function BoxView({ children, className = "", delay = 100 }: TextViewProps) {
     const elementRef = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
 
