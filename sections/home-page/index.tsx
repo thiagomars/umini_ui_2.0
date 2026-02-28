@@ -31,9 +31,9 @@ export default function HomePage() {
 
                         <div className="w-full lg:w-3/5 flex flex-row lg:justify-start justify-center items-center flex-wrap gap-x-2 gap-y-3">
                             <Button>Agendar reunião</Button>
-                            <Button>Nossos serviços</Button>
-                            <Button>Calcular Potência do Kit fotovoltaico</Button>
-                            <Button>Combos de projeto</Button>
+                            <Button onClick="/servicos">Nossos serviços</Button>
+                            <Button onClick="#servicos">Calcular Potência do Kit fotovoltaico</Button>
+                            <Button onClick="#combos">Combos de projeto</Button>
                             <Button>Área do cliente</Button>
                         </div>
                     </div>

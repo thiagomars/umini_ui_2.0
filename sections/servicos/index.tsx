@@ -12,7 +12,7 @@ export default function Servicos() {
                     <div className="space-y-8 sm:px-16 xl:px-24 min-h-3/4">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Nossos serviços:</h2>
 
-                        <ul className="list-image-[url(/icon-ul.png)] list-inside space-y-2 lg:space-y-1 md:text-lg">
+                        <ul className="list-image-[url(/icon-ul.png)] list-inside space-y-2 lg:space-y-1 md:text-lg ml-1">
                             <BoxView>
                                 <li>Projetos Fotovoltaicos</li>
                             </BoxView>

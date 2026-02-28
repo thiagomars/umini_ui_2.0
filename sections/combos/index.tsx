@@ -33,7 +33,7 @@ export default function Combos() {
         <section id="combos" className="relative pt-8 pb-28">
             <div className="absolute w-full lg:w-5/12 top-0 left-0 h-full bg-primary lg:rounded-br-[60px] -z-10"></div>
 
-            <Section className="px-8 lg:px-20 z-10 py-24">
+            <Section className="px-8 lg:px-20 z-10 py-16">
                 <h3 className="text-white lg:text-gray-700 text-5xl lg:text-6xl text-center font-bold">Combos de Projetos Fotovoltaicos</h3>
             </Section>
 

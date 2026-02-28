@@ -28,7 +28,7 @@ export default function NossosClientes() {
                         </BoxView>
 
                         <BoxView delay={600}>
-                            <Button className="w-fit text-white">
+                            <Button onClick="/sobre" className="w-fit text-white">
                                 Sobre a UMINI
                             </Button>
                         </BoxView>

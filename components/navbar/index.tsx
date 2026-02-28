@@ -47,11 +47,11 @@ export default function Navbar() {
             <div className={cn("z-10", isWhiteTheme ? "text-white" : "text-gray-800")}>
                 <div className="hidden lg:flex flex-col xl:flex-row gap-x-6 gap-y-2 items-end xl:items-center">
                     <ul className="flex justify-end flex-row flex-wrap gap-x-6 gap-y-4 items-center xl:mr-0 mr-1">
-                        <li className="cursor-pointer p-1">Serviços</li>
-                        <li className="cursor-pointer p-1">Planos</li>
-                        <li className="cursor-pointer p-1">Certificados</li>
-                        <li className="cursor-pointer p-1">Quem Somos</li>
-                        <li className="cursor-pointer p-1">Contato</li>
+                        <li className="cursor-pointer p-1"><a href="/servicos">Serviços</a></li>
+                        <li className="cursor-pointer p-1"><a href="/#combos">Planos</a></li>
+                        <li className="cursor-pointer p-1"><a href="/certificados">Certificados</a></li>
+                        <li className="cursor-pointer p-1"><a href="/quem-somos">Quem Somos</a></li>
+                        <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
                     </ul>
 
                     <Button className="w-fit">
@@ -72,11 +72,11 @@ export default function Navbar() {
 
                         <SheetDescription className="text-lg bg-gray-100 h-full">
                             <ul className="divide-y">
-                                <li className="cursor-pointer p-4">Serviços</li>
-                                <li className="cursor-pointer p-4">Planos</li>
-                                <li className="cursor-pointer p-4">Certificados</li>
-                                <li className="cursor-pointer p-4">Quem Somos</li>
-                                <li className="cursor-pointer p-4">Contato</li>
+                                <li className="cursor-pointer p-1"><a href="/servicos">Serviços</a></li>
+                                <li className="cursor-pointer p-1"><a href="/#combos">Planos</a></li>
+                                <li className="cursor-pointer p-1"><a href="/certificados">Certificados</a></li>
+                                <li className="cursor-pointer p-1"><a href="/quem-somos">Quem Somos</a></li>
+                                <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
                                 <div className="p-6">
                                     <Button className="w-full mt-2 text-white">
                                         Área do Cliente

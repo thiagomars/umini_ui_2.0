@@ -128,3 +128,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-6px);
+    }
+    50% {
+      transform: translateX(6px);
+    }
+    75% {
+      transform: translateX(-6px);
+    }
+  }
+
+  .animate-shake {
+    animation: shake 0.2s ease-in-out 0s 2;
+    /* border-color: #ef4444 !important;
+    box-shadow: 0 0 0 1px #ef4444; */
+  }
+}

@@ -18,6 +18,7 @@ export function NumericInput({
     decimalPlaces = 2,
     placeholder,
     hasError,
+    setHasError,
     label
 }: NumericInputProps) {
     function corrigeMinMax(value: number) {
@@ -36,7 +37,7 @@ export function NumericInput({
 
     return (
         <div className="relative text-sm">
-            <label className="bloc font-medium mb-1 ml-1">{label}</label>
+            <label className="font-medium mb-1 ml-1">{label}</label>
 
             <input
                 name={name}
@@ -48,11 +49,12 @@ export function NumericInput({
                     const numericValue = stringParaNumber(e.target.value, decimalPlaces);
                     handleValueChange(numericValue);
                 }}
+                onBlur={() => !!setHasError && setHasError(false)}
                 placeholder={placeholder}
                 className={cn(
                     "w-full mt-1 rounded-lg border px-3 py-2 placeholder-gray-400 text-gray-800 dark:text-gray-300 bg-white dark:bg-transparent",
                     "disabled:bg-gray-100 disabled:cursor-not-allowed",
-                    !hasError ? "border-gray-300" : "border-red-500",
+                    !hasError ? "border-gray-300" : "border-red-500 animate-shake",
                     "focus:outline-none focus:ring-2 focus:ring-primary -600 focus:border-primary -600"
                 )}
                 autoComplete="off"
@@ -111,6 +113,7 @@ export function MaskedInput({
     placeholder,
     maskPlaceholder,
     hasError,
+    setHasError,
     label
 }: MaskedInputProps) {
 
@@ -126,10 +129,11 @@ export function MaskedInput({
                     disabled={disabled}
                     autoComplete="off"
                     mask={mask}
+                    onBlur={() => !!setHasError && setHasError(false)}
                     className={cn(
                         "w-full mt-1 border px-3 py-2 placeholder-gray-400 text-gray-800 dark:text-gray-300 bg-white dark:bg-transparent",
                         "disabled:bg-gray-100 disabled:cursor-not-allowed",
-                        !hasError ? "border-gray-300" : "border-red-500",
+                        !hasError ? "border-gray-300" : "border-red-500 animate-shake",
                         "focus:outline-none focus:ring-2 focus:ring-primary -500 focus:border-primary -500 focus:mr-1",
                         "rounded-lg"
                     )}
@@ -152,6 +156,7 @@ export function SelectInput({
     disabled,
     placeholder,
     hasError,
+    setHasError
 }: SelectInputProps) {
     const [isMounted, setIsMounted] = useState(false);
     useEffect(() => setIsMounted(true), []);
@@ -160,7 +165,7 @@ export function SelectInput({
 
     return (
         <div className="text-sm w-full flex flex-col">
-            <label className="font-medium mb-1 ml-1 text-gray-700 dark:text-gray-200">
+            <label className="font-medium mb-1 ml-1">
                 {label}
             </label>
 
@@ -175,13 +180,14 @@ export function SelectInput({
                 onChange={(newValue: any) => onChange(newValue?.value)}
                 menuPortalTarget={typeof document !== "undefined" ? document.body : null}
                 menuShouldScrollIntoView={true}
+                onBlur={() => !!setHasError && setHasError(false)}
                 unstyled
                 classNames={{
                     control: ({ isFocused }) => cn(
                         "flex w-full rounded-lg border px-1 py-1 transition-all bg-white dark:bg-zinc-950",
                         !hasError
                             ? isFocused ? "border-primary-600 ring-2 ring-primary-600/20" : "border-gray-300 dark:border-zinc-800"
-                            : "border-red-500 ring-2 ring-red-500/20",
+                            : "border-red-500 ring-2 ring-red-500/20 animate-shake",
                         disabled && "bg-gray-100 dark:bg-zinc-900 opacity-80 cursor-not-allowed"
                     ),
                     menuList: () => "p-1 max-h-[250px] overflow-y-auto custom-scrollbar overflow-hidden",
@@ -193,7 +199,7 @@ export function SelectInput({
                     placeholder: () => "text-gray-400 pl-2",
                     singleValue: () => "text-gray-800 dark:text-gray-200 pl-2",
                     input: () => "pl-2 text-gray-800 dark:text-gray-200",
-                    dropdownIndicator: () => "p-2 text-gray-400 hover:text-gray-600",
+                    dropdownIndicator: () => "p-1 text-gray-400 hover:text-gray-600",
                     clearIndicator: () => "p-2 text-gray-400",
                     noOptionsMessage: () => "p-4 text-gray-500"
                 }}
@@ -227,6 +233,7 @@ export function TextInput({
     disabled,
     placeholder,
     hasError,
+    setHasError,
     label,
     type
 }: TextInputProps) {
@@ -242,11 +249,12 @@ export function TextInput({
                     onChange={(e: any) => onChange(e.target.value)}
                     disabled={disabled}
                     autoComplete="off"
+                    onBlur={() => !!setHasError && setHasError(false)}
                     type={type ?? "text"}
                     className={cn(
                         "w-full mt-1 border px-3 py-2 placeholder-gray-400 text-gray-800 dark:text-gray-300 bg-white dark:bg-transparent",
                         "disabled:bg-gray-100 disabled:cursor-not-allowed",
-                        !hasError ? "border-gray-300" : "border-red-500",
+                        !hasError ? "border-gray-300" : "border-red-500 animate-shake",
                         "focus:outline-none focus:ring-2 focus:ring-primary -500 focus:border-primary -500 focus:mr-1",
                         "rounded-lg"
                     )}
@@ -265,6 +273,7 @@ export function CheckboxInput({
     label,
     disabled,
     hasError,
+    setHasError,
     accent
 }: CheckboxInputProps) {
     return (
@@ -278,7 +287,7 @@ export function CheckboxInput({
                 disabled={disabled}
                 className={cn(
                     "mt-1 h-4 w-4 rounded border border-gray-500 text-primary-600 focus:ring-primary-600 cursor-pointer",
-                    !hasError ? "border-gray-300" : "border-red-500",
+                    !hasError ? "border-gray-300" : "border-red-500 animate-shake",
                     disabled && "cursor-not-allowed opacity-70",
                     accent ?? "accent-white"
                 )}

@@ -8,6 +8,7 @@ interface BaseInput<T extends string | number | boolean> {
     disabled?: boolean;
     placeholder?: string;
     hasError?: boolean;
+    setHasError?: (error: boolean) => void;
 }
 
 export interface TextInputProps extends BaseInput<string> {

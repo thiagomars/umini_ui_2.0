@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import listaEstados from '@/database/estados.json';
 import listaCidades from '@/database/cidades.json';
 import listaPvout from '@/database/pvout.json';
-import { converterDecimal } from '@/utils/decimal';
+import { cn } from '@/lib/utils';
 
 export default function DimensionamentoForm() {
 
@@ -15,21 +15,31 @@ export default function DimensionamentoForm() {
     const [estado, setEstado] = useState<string>("");
     const [cidade, setCidade] = useState<string>("");
 
+    const [consumoError, setConsumoError] = useState<boolean>(false);
+    const [cepError, setCepError] = useState<boolean>(false);
+    const [estadoError, setEstadoError] = useState<boolean>(false);
+    const [cidadeError, setCidadeError] = useState<boolean>(false);
+
     const [resultadoPotencia, setResultadoPotencia] = useState<number>(0);
     const [resultadoGeracao, setResultadoGeracao] = useState<number>(0);
 
     const handleCalcular = () => {
-        if (!consumo || !cidade) {
-            alert("Por favor, preencha o consumo e selecione a cidade.");
-            return;
-        }
+        if (!consumo)
+            setConsumoError(true);
 
-        console.log("consumo: ", consumo);
-        console.log("cidade: ", cidade);
+        if (!cidade)
+            setCidadeError(true);
+
+        if (!estado)
+            setEstadoError(true);
+
+        if (!!cep && cep?.toString()?.replace(/\D/g, "").length < 8)
+            setCepError(true);
+
+        if (!consumo || !cidade || !estado || !cep)
+            return;
 
         const dadosSolar = listaPvout.find(x => x.id.toString() === cidade);
-
-        console.log(dadosSolar);
 
         if (!dadosSolar || !dadosSolar.pvout) {
             alert("Dados solares não encontrados para esta região.");
@@ -38,9 +48,6 @@ export default function DimensionamentoForm() {
 
         const potenciaKwp = (consumo * 12) / (dadosSolar.pvout ?? 0);
         const geracaoMensal = potenciaKwp * dadosSolar.pvout / 12;
-
-        console.log("geração mensal: ", geracaoMensal);
-        console.log("potência kwp: ", potenciaKwp);
 
         setResultadoPotencia(potenciaKwp + (potenciaKwp * 0.12)); // Adicionando 12% de margem
         setResultadoGeracao(geracaoMensal);
@@ -81,7 +88,7 @@ export default function DimensionamentoForm() {
                     Dimensionamento rápido
                 </h2>
 
-                <form className="space-y-2.5" onSubmit={e => e.preventDefault()}>
+                <form className="space-y-4 max-w-md mx-auto" onSubmit={e => e.preventDefault()}>
                     <NumericInput
                         label='Consumo médio da geradora + rateios (kWh/mês)'
                         name='consumo'
@@ -89,6 +96,8 @@ export default function DimensionamentoForm() {
                         onChange={setConsumo}
                         value={consumo}
                         min={0}
+                        hasError={consumoError}
+                        setHasError={setConsumoError}
                     />
 
                     <MaskedInput
@@ -99,6 +108,8 @@ export default function DimensionamentoForm() {
                         onChange={setCep}
                         value={cep}
                         placeholder='00.000-000'
+                        hasError={cepError}
+                        setHasError={setCepError}
                     />
 
                     <SelectInput
@@ -114,6 +125,8 @@ export default function DimensionamentoForm() {
                                 label: x.state
                             }))
                         ]}
+                        hasError={estadoError}
+                        setHasError={setEstadoError}
                     />
 
                     <SelectInput
@@ -130,6 +143,8 @@ export default function DimensionamentoForm() {
                                 label: x.name
                             })) : [])
                         ]}
+                        hasError={cidadeError}
+                        setHasError={setCidadeError}
                     />
 
                     <Button
@@ -141,7 +156,11 @@ export default function DimensionamentoForm() {
                     </Button>
                 </form>
 
-                <div className="mt-10 text-center space-y-8">
+
+                <div className={cn(
+                    !!resultadoGeracao && !!resultadoPotencia ? "max-h-150" : "max-h-0",
+                    "mt-10 text-center space-y-8 overflow-hidden transition-all duration-500 ease-in-out"
+                )}>
                     <div>
                         <p className="text-sm font-semibold uppercase tracking-wider">Potência do Sistema</p>
                         <h3 className="text-4xl lg:text-5xl font-bold transition-all duration-300">
