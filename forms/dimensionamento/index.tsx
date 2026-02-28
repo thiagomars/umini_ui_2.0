@@ -36,7 +36,7 @@ export default function DimensionamentoForm() {
         if (!!cep && cep?.toString()?.replace(/\D/g, "").length < 8)
             setCepError(true);
 
-        if (!consumo || !cidade || !estado || !cep)
+        if (!consumo || !cidade || !estado)
             return;
 
         const dadosSolar = listaPvout.find(x => x.id.toString() === cidade);
@@ -164,14 +164,14 @@ export default function DimensionamentoForm() {
                     <div>
                         <p className="text-sm font-semibold uppercase tracking-wider">Potência do Sistema</p>
                         <h3 className="text-4xl lg:text-5xl font-bold transition-all duration-300">
-                            {resultadoPotencia > 0 ? resultadoPotencia.toFixed(2).replace(".", ",") : "0"} kWp
+                            {resultadoPotencia?.toFixed(2).replace(".", ",")} kWp
                         </h3>
                     </div>
 
                     <div>
                         <p className="text-sm font-semibold uppercase tracking-wider">Geração média mensal</p>
                         <h3 className="text-5xl lg:text-6xl font-bold">
-                            {resultadoGeracao > 0 ? resultadoGeracao.toFixed(2).replace(".", ",") : "0"} kWh
+                            {resultadoGeracao?.toFixed(2).replace(".", ",")} kWh
                         </h3>
                     </div>
                 </div>
