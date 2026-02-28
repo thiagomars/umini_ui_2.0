@@ -120,7 +120,7 @@ const BrazilMap = () => {
                     }}
                 />
 
-                <p className="z-10 w-1/2 absolute bottom-2 right-0 text-right text-xs">Dados atualizados em 19/02/2026</p>
+                <p className="z-10 w-1/2 absolute bottom-2 right-0 text-right text-xs text-gray-400">Dados atualizados em 19/02/2026</p>
             </div>
 
             <div className={cn(
