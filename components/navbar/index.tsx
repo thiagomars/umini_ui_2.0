@@ -19,32 +19,32 @@ import { useSectionExiting } from "@/hooks/useSectionExiting";
 
 export default function Navbar() {
 
-    // const activeSection = useActiveSection();
+    const activeSection = useActiveSection();
     const exited = useSectionExiting();
 
     // const darkSections = ['home'];
     // const isDarkTheme = darkSections.includes(activeSection);
-    const isWhiteTheme = !exited['home'];
+    const isBgWhite = !exited['home'] && activeSection === 'home';
 
     return (
         <header className="flex flex-row justify-between items-center gap-8 py-8 px-6 lg:px-10 fixed w-full z-20 top-0">
 
-            {isWhiteTheme && <div className="absolute inset-0 pointer-events-none bg-linear-to-b from-black/80 via-black/80 to-transparent"></div>}
+            {isBgWhite && <div className="absolute inset-0 pointer-events-none bg-linear-to-b from-black/80 via-black/80 to-transparent"></div>}
 
-            {isWhiteTheme
+            {isBgWhite
                 ? <div className="absolute inset-0 h-[150%] pointer-events-none backdrop-blur-2xl mask-[linear-gradient(to_bottom,black_10%,transparent_100%)]"></div>
                 : <div className="absolute inset-0 h-[120%] pointer-events-none backdrop-blur-2xl mask-[linear-gradient(to_bottom,black_50%,transparent_100%)]"></div>}
 
             <Image
                 className="z-10"
                 priority
-                src={isWhiteTheme ? "/hori_fundo-escuro.png" : "/hori_fundo-claro.png"}
+                src={isBgWhite ? "/hori_fundo-escuro.png" : "/hori_fundo-claro.png"}
                 alt="Umini Logo"
                 width={150}
                 height={0}
             />
 
-            <div className={cn("z-10", isWhiteTheme ? "text-white" : "text-gray-800")}>
+            <div className={cn("z-10", isBgWhite ? "text-white" : "text-gray-800")}>
                 <div className="hidden lg:flex flex-col xl:flex-row gap-x-6 gap-y-2 items-end xl:items-center">
                     <ul className="flex justify-end flex-row flex-wrap gap-x-6 gap-y-4 items-center xl:mr-0 mr-1">
                         <li className="cursor-pointer p-1"><a href="/servicos">Serviços</a></li>

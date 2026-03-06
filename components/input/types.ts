@@ -13,6 +13,7 @@ interface BaseInput<T extends string | number | boolean> {
 
 export interface TextInputProps extends BaseInput<string> {
     type?: string;
+    textClassName?: string;
 }
 
 export interface NumericInputProps extends BaseInput<number> {

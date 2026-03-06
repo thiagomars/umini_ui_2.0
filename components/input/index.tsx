@@ -235,12 +235,15 @@ export function TextInput({
     hasError,
     setHasError,
     label,
-    type
+    type,
+    textClassName
 }: TextInputProps) {
 
     return (
         <div className="text-sm">
-            <label className="font-medium mb-1 ml-1">{label}</label>
+            <div className={textClassName}>
+                <label className="font-medium mb-1 ml-1">{label}</label>
+            </div>
             <div className="flex flex-row items-end">
                 <input
                     id={id ?? `id_${name}`}

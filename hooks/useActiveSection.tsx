@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useEffect } from 'react';
 
 export function useActiveSection() {
@@ -17,7 +15,7 @@ export function useActiveSection() {
 
         const observer = new IntersectionObserver(handleIntersect, {
             // rootMargin: '-10% 0px -70% 0px', // Opcional: ajusta a "linha de detecção"
-            threshold: 0.7, // 50% da seção precisa estar visível
+            threshold: 0.9, // 50% da seção precisa estar visível
         });
 
         // Pega todas as seções que possuem um ID

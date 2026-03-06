@@ -44,7 +44,7 @@ export default function Combos() {
                             <h3 className="text-4xl md:text-3xl xl:text-4xl">PLANO<br /><span className="text-6xl lg:text-5xl xl:text-6xl font-extrabold">KILO</span></h3>
 
                             <h2 className="w-fit text-nowrap">
-                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">5</span>projetos <br />por mês
+                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">5</span>quantidade <br />de projetos
                             </h2>
 
                             <div>
@@ -59,7 +59,7 @@ export default function Combos() {
                             <h3 className="text-4xl md:text-3xl xl:text-4xl">PLANO<br /><span className="text-6xl lg:text-5xl xl:text-6xl font-extrabold">MEGA</span></h3>
 
                             <h2 className="w-fit text-nowrap">
-                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">10</span>projetos <br />por mês
+                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">10</span>quantidade <br />de projetos
                             </h2>
 
                             <div>
@@ -74,7 +74,7 @@ export default function Combos() {
                             <h3 className="text-4xl md:text-3xl xl:text-4xl">PLANO<br /><span className="text-6xl lg:text-5xl xl:text-6xl font-extrabold">GIGA</span></h3>
 
                             <h2 className="w-fit text-nowrap">
-                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">15</span>projetos <br />por mês
+                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">15</span>quantidade <br />de projetos
                             </h2>
 
                             <div>
@@ -89,7 +89,7 @@ export default function Combos() {
                             <h3 className="text-4xl md:text-3xl xl:text-4xl">PLANO<br /><span className="text-6xl lg:text-5xl xl:text-6xl font-extrabold">TERA</span></h3>
 
                             <h2 className="w-fit text-nowrap">
-                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">20</span>projetos <br />por mês
+                                <span className="text-8xl xl:text-9xl font-black float-left -mt-4">20</span>quantidade <br />de projetos
                             </h2>
 
                             <div>

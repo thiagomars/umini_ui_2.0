@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <>
-            <section id="footer" className="bg-secondary w-full">
+            <section id="footer" className="bg-secondary w-full z-10">
                 <Section>
                     <div className="px-4 lg:px-8 xl:px-16 pt-16 text-sm flex gap-8 flex-col lg:flex-row justify-between items-center">
                         <Image

@@ -5,7 +5,7 @@ import { Typing } from "@/components/typing";
 export default function HomePage() {
 
     return (
-        <section id="home" className="min-h-dvh">
+        <section id="home">
             <div className="relative w-full min-h- flex flex-col justify-center">
                 <video
                     autoPlay

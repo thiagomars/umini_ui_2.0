@@ -1,0 +1,52 @@
+[
+    {
+        "titulo": "Projetos Fotovoltaicos",
+        "subtitulo": "Nosso objetivo é levar energia solar com clareza, acessibilidade e alta performance.",
+        "descricao": "Projetos completos, seguros e adequados às normas das concessionárias. Dimensionamos geração, inversores, proteções e entregamos toda a documentação para homologação, garantindo eficiência, economia e tranquilidade."
+    },
+    {
+        "titulo": "Projetos de subestações elétricas",
+        "subtitulo": "Tornamos a engenharia de subestações mais acessível, segura e eficiente.",
+        "descricao": "Projetos de média tensão com rigor técnico absoluto, incluindo estudos de curto-circuito, seletividade, aterramento e layout físico. Soluções seguras, claras e prontas para aprovação e execução."
+    },
+    {
+        "titulo": "Projetos de centros de medição",
+        "subtitulo": "Organização, segurança e padronização para medições em qualquer escala.",
+        "descricao": "Projetos organizados e padronizados para condomínios, edifícios e indústrias, garantindo conformidade, segurança e facilidade de expansão futura."
+    },
+    {
+        "titulo": "Projetos de SPDA",
+        "subtitulo": "Proteção completa, fundamentada em engenharia de alto nível e explicada de forma simples.",
+        "descricao": "Sistemas de proteção contra descargas atmosféricas conforme a NBR 5419, com análises de risco, modelagem e dimensionamento completo para proteção de vidas e patrimônios."
+    },
+    {
+        "titulo": "Projetos de eletrificação de loteamentos",
+        "subtitulo": "Transformamos a eletrificação de loteamentos em um processo claro, organizado e acessível.",
+        "descricao": "Redes elétricas urbanas e rurais com estudos de demanda, traçado, transformadores e medição coletiva, focadas em viabilidade e redução de custos."
+    },
+    {
+        "titulo": "Gestão de faturas – Mercado Livre e Mercado Cativo",
+        "subtitulo": "Transparência e economia com uma leitura inteligente e humanizada das tarifas.",
+        "descricao": "Análise completa de faturas, identificação de cobranças indevidas e oportunidades de economia, com relatórios claros e acionáveis. Gestão técnica de contratos, modulação, sazonalidade e custos."
+    },
+    {
+        "titulo": "Projetos elétricos internos",
+        "subtitulo": "Engenharia interna feita para durar, proteger e facilitar a vida de quem executa.",
+        "descricao": "Projetos residenciais, comerciais e industriais com foco em segurança, funcionalidade e eficiência energética, prontos para execução sem retrabalho."
+    },
+    {
+        "titulo": "Análises tarifárias",
+        "subtitulo": "Ciência tarifária aplicada de forma acessível, estratégica e completamente alinhada às necessidades do cliente.",
+        "descricao": "Estudos detalhados para identificar a melhor estrutura tarifária, reduzindo custos e apoiando decisões estratégicas."
+    },
+    {
+        "titulo": "Modelagem 3D",
+        "subtitulo": "Engenharia interna feita para durar, proteger e facilitar a vida de quem executa.",
+        "descricao": "Projetos residenciais, comerciais e industriais com foco em segurança, funcionalidade e eficiência energética, prontos para execução sem retrabalho."
+    },
+    {
+        "titulo": "Serviço de pós-venda",
+        "subtitulo": "Ciência tarifária aplicada de forma acessível, estratégica e completamente alinhada às necessidades do cliente.",
+        "descricao": "Estudos detalhados para identificar a melhor estrutura tarifária, reduzindo custos e apoiando decisões estratégicas."
+    }
+]
