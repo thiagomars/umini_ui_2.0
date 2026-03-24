@@ -1,4 +1,3 @@
-import BoxView from "@/components/boxView";
 import Button from "@/components/button";
 import Section from "@/components/section";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";

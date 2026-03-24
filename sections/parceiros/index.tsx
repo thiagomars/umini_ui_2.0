@@ -43,7 +43,7 @@ export default function Parceiros() {
         <section id="parceiros" className="py-20 overflow-hidden bg-white">
             <h1 className="w-full text-center my-6 text-2xl">Nossos parceiros:</h1>
 
-            <div className="bg-gray-100 py-10 hidden md:block">
+            <div className="bg-gray-100 py-10 hidden md:block shadow-inner">
                 <Slider {...settings} key="slider_1">
                     {Array.from({ length: 13 }, (_, i) => (
                         <div key={i + 1 + "img1"} className="px-8 outline-none">
@@ -53,7 +53,7 @@ export default function Parceiros() {
                                     alt={`Parceiro ${i + 1}`}
                                     fill
                                     sizes="(max-width: 768px), 25vw"
-                                    className="object-contain"
+                                    className="object-contain drop-shadow-md"
                                 />
                             </div>
                         </div>

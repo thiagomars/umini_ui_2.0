@@ -154,3 +154,19 @@ html {
     animation: shake 0.2s ease-in-out 0s 2;
   }
 }
+
+/* Transforma a trilha em flexbox e centraliza todos os cards verticalmente */
+.slider .slick-track {
+  display: flex !important;
+  align-items: center !important; /* <-- A mágica acontece aqui */
+}
+
+/* Permite que o slide tenha altura automática baseada no conteúdo */
+.slider .slick-slide {
+  height: auto !important;
+}
+
+/* Garante que o container interno não force 100% da altura */
+.slider .slick-slide > div {
+  height: auto !important;
+}

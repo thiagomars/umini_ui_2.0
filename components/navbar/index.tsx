@@ -36,12 +36,16 @@ export default function Navbar() {
                 : <div className="absolute inset-0 h-[120%] pointer-events-none backdrop-blur-2xl mask-[linear-gradient(to_bottom,black_50%,transparent_100%)]"></div>}
 
             <Image
-                className="z-10"
+                className="z-10 cursor-pointer"
                 priority
                 src={isBgWhite ? "/hori_fundo-escuro.png" : "/hori_fundo-claro.png"}
                 alt="Umini Logo"
                 width={150}
                 height={0}
+                onClick={() => {
+                    if (window.location.pathname?.replace("/", "") != "")
+                        window.location.pathname = "/"
+                }}
             />
 
             <div className={cn("z-10", isBgWhite ? "text-white" : "text-gray-800")}>
@@ -72,11 +76,11 @@ export default function Navbar() {
 
                         <SheetDescription className="text-lg bg-gray-100 h-full">
                             <ul className="divide-y">
-                                <li className="cursor-pointer p-1"><a href="/servicos">Serviços</a></li>
-                                <li className="cursor-pointer p-1"><a href="/#combos">Planos</a></li>
-                                <li className="cursor-pointer p-1"><a href="/certificados">Certificados</a></li>
-                                <li className="cursor-pointer p-1"><a href="/quem-somos">Quem Somos</a></li>
-                                <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
+                                <li className="cursor-pointer p-4"><a href="/servicos">Serviços</a></li>
+                                <li className="cursor-pointer p-4"><a href="/#combos">Planos</a></li>
+                                <li className="cursor-pointer p-4"><a href="/certificados">Certificados</a></li>
+                                <li className="cursor-pointer p-4"><a href="/quem-somos">Quem Somos</a></li>
+                                <li className="cursor-pointer p-4"><a href="#footer">Contato</a></li>
                                 <div className="p-6">
                                     <Button className="w-full mt-2 text-white">
                                         Área do Cliente
