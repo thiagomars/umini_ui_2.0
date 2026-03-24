@@ -5,6 +5,7 @@ import { keywords } from "@/utils/keywords";
 import Navbar from "@/components/navbar";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import Footer from "@/sections/footer";
+import GlobalLoading from "@/components/GlobalLoading";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -33,9 +34,11 @@ export default function RootLayout({
     return (
         <html lang="pt-br">
             <body className={`${geistInter.variable} scroll-smooth`}>
-                <Navbar />
-                {children}
-                <Footer />
+                <GlobalLoading>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                </GlobalLoading>
             </body>
         </html >
     );
