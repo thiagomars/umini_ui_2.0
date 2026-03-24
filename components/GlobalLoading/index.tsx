@@ -132,7 +132,7 @@ export default function GlobalLoading({ children }: { children: React.ReactNode 
     useEffect(() => {
         // 1. Promessa do tempo mínimo (2 segundos)
         const minimumTimePromise = new Promise((resolve) => {
-            setTimeout(resolve, 2000);
+            setTimeout(resolve, 1000);
         });
 
         // 2. Promessa do carregamento da página
@@ -179,8 +179,11 @@ export default function GlobalLoading({ children }: { children: React.ReactNode 
                         src="/hori_fundo-claro.png"
                         alt="Umini Logo"
                         width={350}
+                        style={{ width: 'auto', height: 'auto' }}
                         height={0} // O Next.js com width fixo e height 0 (e sem style auto) às vezes reclama. Se a logo ficar distorcida, troque para um height proporcional ou use style={{ width: 'auto', height: 'auto' }}
                     />
+
+                    <div className='mx-auto mt-20 size-10 border-4 border-secondary border-r-white rounded-full animate-spin'></div>
                 </div>
             </div>
 
