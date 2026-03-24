@@ -68,7 +68,7 @@ export default function Servicos() {
                         )?.map((servico, index) => (
                             <BoxOpaco key={index} className="p-8 flex flex-col gap-2 sm:gap-4" mainClassName="rounded-[40px]">
                                 <h2 className="text-xl md:text-2xl font-bold">{servico.titulo}</h2>
-                                <h3 className="text-lg font-semibold">{servico.subtitulo}</h3>
+                                <h3 className="text-lg font-semibold leading-6 mb-2">{servico.subtitulo}</h3>
                                 <p className="text-sm md:text-base text-justify sm:text-left">{servico.descricao}</p>
 
                                 <Button className="text-white w-fit mt-4">Fale conosco</Button>
