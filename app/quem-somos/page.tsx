@@ -16,7 +16,7 @@ export default function Sobre() {
             <Parceiros />
 
             <section id="numeros">
-                <h2 className="text-center text-4xl md:text-5xl font-bold pt-20">Nossos números</h2>
+                <h2 className="text-center text-4xl md:text-5xl font-bold pt-20 text-gray-700">Nossos números</h2>
                 <NossosNumeros />
             </section>
 

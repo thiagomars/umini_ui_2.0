@@ -46,17 +46,17 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col text-center lg:text-left lg:flex-row items-center lg:items-start gap-12 px-4 py-8 lg:p-8 xl:p-16 text-sm">
+                    <div className="flex flex-col text-white/90 text-center lg:text-left lg:flex-row items-center lg:items-start gap-12 px-4 py-8 lg:p-8 xl:p-16 text-sm">
                         <div className="space-y-12 w-fit">
-                            <div className="text-white">
-                                <h3 className="font-semibold mb-4">Nosso escritório</h3>
+                            <div className="">
+                                <h3 className="font-semibold mb-4 text-white">Nosso escritório</h3>
 
                                 <p>Av. José do Patrocínio, 1539 - Loja 3 - Coqueiro</p>
                                 <p>Itapipoca - CE, 62508-048</p>
                             </div>
 
-                            <div className="text-white">
-                                <h3 className="font-semibold mb-4">Contato</h3>
+                            <div className="">
+                                <h3 className="font-semibold mb-4 text-white">Contato</h3>
 
                                 <p>+55 88 91234-5678</p>
                                 <p>uminiadm@gmail.com</p>
@@ -64,15 +64,15 @@ export default function Footer() {
                         </div>
 
                         <div className="space-y-12 w-fit lg:mx-auto">
-                            <div className="text-white">
-                                <h3 className="font-semibold mb-4">Soluções</h3>
+                            <div className="">
+                                <h3 className="font-semibold mb-4 text-white">Soluções</h3>
 
                                 <p>Solicitar orçamento</p>
                                 <p>Dimensionamento rápido</p>
                             </div>
 
-                            <div className="text-white">
-                                <h3 className="font-semibold mb-4">Mapa do site</h3>
+                            <div className="">
+                                <h3 className="font-semibold mb-4 text-white">Mapa do site</h3>
 
                                 <p>Início</p>
                                 <p>Nossos serviços</p>
@@ -85,8 +85,8 @@ export default function Footer() {
                         </div>
 
                         <div className="space-y-12 w-fit lg:ml-auto">
-                            <div className="text-white lg:text-right">
-                                <h3 className="font-semibold mb-4">Informações</h3>
+                            <div className=" lg:text-right">
+                                <h3 className="font-semibold mb-4 text-white">Informações</h3>
 
                                 <p>Termos e condições</p>
                             </div>
