@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import Footer from "@/sections/footer";
 import GlobalLoading from "@/components/GlobalLoading";
+import { ToastContainer } from 'react-toastify';
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
     return (
         <html lang="pt-br">
             <body className={`${geistInter.variable} scroll-smooth`}>
+                <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
                 <GlobalLoading>
                     <Navbar />
                     {children}

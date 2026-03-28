@@ -53,7 +53,7 @@ export default function Navbar() {
                     <ul className="flex justify-end flex-row flex-wrap gap-x-6 gap-y-4 items-center xl:mr-0 mr-1">
                         <li className="cursor-pointer p-1"><a href="/servicos">Serviços</a></li>
                         <li className="cursor-pointer p-1"><a href="/#combos">Planos</a></li>
-                        <li className="cursor-pointer p-1"><a href="/certificados">Certificados</a></li>
+                        {/* <li className="cursor-pointer p-1"><a href="/certificados">Certificados</a></li> */}
                         <li className="cursor-pointer p-1"><a href="/quem-somos">Quem Somos</a></li>
                         <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
                     </ul>
@@ -78,7 +78,7 @@ export default function Navbar() {
                             <ul className="divide-y">
                                 <li className="cursor-pointer p-4"><a href="/servicos">Serviços</a></li>
                                 <li className="cursor-pointer p-4"><a href="/#combos">Planos</a></li>
-                                <li className="cursor-pointer p-4"><a href="/certificados">Certificados</a></li>
+                                {/* <li className="cursor-pointer p-4"><a href="/certificados">Certificados</a></li> */}
                                 <li className="cursor-pointer p-4"><a href="/quem-somos">Quem Somos</a></li>
                                 <li className="cursor-pointer p-4"><a href="#footer">Contato</a></li>
                                 <div className="p-6">

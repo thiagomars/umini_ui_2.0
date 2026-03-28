@@ -52,7 +52,12 @@ export default function Combos() {
                                 <p>4 Modelagens 3D</p>
                             </div>
 
-                            <Button className="text-white text-base w-full">SOLICITAR ORÇAMENTO</Button>
+                            <Button
+                                className="text-white text-base w-full"
+                                onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20de%20projetos"}
+                            >
+                                SOLICITAR ORÇAMENTO
+                            </Button>
                         </BoxOpaco>
 
                         <BoxOpaco className="text-gray-800/80 text-xl text-center flex flex-col justify-center items-center gap-10" mainClassName="xl:mx-2 lg:mx-6 md:mx-8 mx-2">
@@ -67,7 +72,12 @@ export default function Combos() {
                                 <p>4 Modelagens 3D</p>
                             </div>
 
-                            <Button className="text-white text-base w-full">SOLICITAR ORÇAMENTO</Button>
+                            <Button
+                                className="text-white text-base w-full"
+                                onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20de%20projetos"}
+                            >
+                                SOLICITAR ORÇAMENTO
+                            </Button>
                         </BoxOpaco>
 
                         <BoxOpaco className="text-gray-800/80 text-xl text-center flex flex-col justify-center items-center gap-10" mainClassName="xl:mx-2 lg:mx-6 md:mx-8 mx-2">
@@ -82,7 +92,12 @@ export default function Combos() {
                                 <p>8 Modelagens 3D</p>
                             </div>
 
-                            <Button className="text-white text-base w-full">SOLICITAR ORÇAMENTO</Button>
+                            <Button
+                                className="text-white text-base w-full"
+                                onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20de%20projetos"}
+                            >
+                                SOLICITAR ORÇAMENTO
+                            </Button>
                         </BoxOpaco>
 
                         <BoxOpaco className="text-gray-800/80 text-xl text-center flex flex-col justify-center items-center gap-10" mainClassName="xl:mx-2 lg:mx-6 md:mx-8 mx-2">
@@ -97,7 +112,12 @@ export default function Combos() {
                                 <p>8 Modelagens 3D</p>
                             </div>
 
-                            <Button className="text-white text-base w-full">SOLICITAR ORÇAMENTO</Button>
+                            <Button
+                                className="text-white text-base w-full"
+                                onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20de%20projetos"}
+                            >
+                                SOLICITAR ORÇAMENTO
+                            </Button>
                         </BoxOpaco>
                     </Slider>
                 </div>

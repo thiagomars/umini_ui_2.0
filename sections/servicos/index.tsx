@@ -39,7 +39,12 @@ export default function Servicos() {
                             </BoxView>
                         </ul>
 
-                        <Button className="text-white">Agendar reunião</Button>
+                        <Button
+                            className="text-white"
+                            onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Umini"}
+                        >
+                            Agendar reunião
+                        </Button>
                     </div>
 
                     <div className="w-full sm:max-w-md lg:max-w-full lg:w-11/12 xl:w-4/5 mx-auto">

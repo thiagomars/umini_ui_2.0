@@ -71,7 +71,12 @@ export default function Servicos() {
                                 <h3 className="text-lg font-semibold leading-6 mb-2">{servico.subtitulo}</h3>
                                 <p className="text-sm md:text-base text-justify sm:text-left">{servico.descricao}</p>
 
-                                <Button className="text-white w-fit mt-4">Fale conosco</Button>
+                                <Button
+                                    className="text-white w-fit mt-4"
+                                    onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20de%20projetos"}
+                                >
+                                    Fale conosco
+                                </Button>
                             </BoxOpaco>
                         ))}
                 </div>

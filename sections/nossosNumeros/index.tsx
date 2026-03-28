@@ -38,7 +38,7 @@ export default function NossosNumeros() {
                             {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
                             <ScrollCounter incrementar valor={120} duracao={3000} />
                         </div>
-                        <p className="text-xl sm:text-2xl">Projetos de Elétricos</p>
+                        <p className="text-xl sm:text-2xl">Projetos Elétricos</p>
                     </div>
 
                     <div className="lg:col-start-2 xl:col-start-auto xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">

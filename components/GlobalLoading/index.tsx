@@ -169,7 +169,7 @@ export default function GlobalLoading({ children }: { children: React.ReactNode 
     return (
         <>
             {/* Overlay Branco com fade-out */}
-            <div className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-all duration-500 ease-in-out ${isAnimateOut ? 'opacity-0 invisible' : 'opacity-100 visible'}`}>
+            <div className={`fixed inset-0 z-9999 flex flex-col items-center justify-center bg-white transition-all duration-500 ease-in-out ${isAnimateOut ? 'opacity-0 invisible' : 'opacity-100 visible'}`}>
 
                 {/* Logo com animação de pulsar (durante) e crescer (na saída) */}
                 <div className={`transition-all duration-500 ease-in-out ${isAnimateOut ? 'scale-125 opacity-0' : 'scale-100 opacity-100'}`}>
