@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import { cn } from '@/lib/utils';
 
 export default function CadastroForm() {
-    emailjs.init("eKqMVPsDah9Vse9UI");
+    emailjs.init("at83M7w4EDJV_DsUg");
 
     const [nome, setNome] = useState<string>("");
     const [empresa, setEmpresa] = useState<string>("");
@@ -61,7 +61,7 @@ export default function CadastroForm() {
             return;
         }
 
-        emailjs.send("service_b9pxwev", "template_qkgpy2v", {
+        emailjs.send("service_3f1x6zg", "template_lyzy1fd", {
             name: nome,
             message: `
 Empresa: ${empresa}
