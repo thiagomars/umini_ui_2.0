@@ -81,7 +81,7 @@ export default function Navbar() {
                                 {/* <li className="cursor-pointer p-4"><a href="/certificados">Certificados</a></li> */}
                                 <li className="cursor-pointer p-4"><a href="/quem-somos">Quem Somos</a></li>
                                 <li className="cursor-pointer p-4"><a href="#footer">Contato</a></li>
-                                <div className="p-6">
+                                <div className="p-6 w-full">
                                     <Button onClick={"area-cliente"} className="w-full mt-2 text-white">
                                         Área do Cliente
                                     </Button>
