@@ -156,7 +156,6 @@ export default function Modelagem3d() {
                         />
                     </div>
 
-                    {/* Coluna Direita */}
                     <div className="flex flex-col gap-4">
                         {/* Exemplo de Card de Vídeo */}
                         <CardVideo
