@@ -37,9 +37,7 @@ export default function RootLayout({
             <body className={`${geistInter.variable} scroll-smooth`}>
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
                 <GlobalLoading>
-                    <Navbar />
                     {children}
-                    <Footer />
                 </GlobalLoading>
             </body>
         </html >

@@ -58,7 +58,7 @@ export default function Navbar() {
                         <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
                     </ul>
 
-                    <Button className="w-fit">
+                    <Button onClick={"area-cliente"} className="w-fit">
                         Área do Cliente
                     </Button>
 
@@ -82,7 +82,7 @@ export default function Navbar() {
                                 <li className="cursor-pointer p-4"><a href="/quem-somos">Quem Somos</a></li>
                                 <li className="cursor-pointer p-4"><a href="#footer">Contato</a></li>
                                 <div className="p-6">
-                                    <Button className="w-full mt-2 text-white">
+                                    <Button onClick={"area-cliente"} className="w-full mt-2 text-white">
                                         Área do Cliente
                                     </Button>
                                 </div>

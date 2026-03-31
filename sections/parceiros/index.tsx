@@ -9,7 +9,7 @@ import { useIsMobile } from "@/hooks/useIsMobile";
 export default function Parceiros() {
     const settings: Settings = {
         infinite: true,
-        slidesToShow: !useIsMobile() ? 5 : 2,
+        slidesToShow: !useIsMobile() ? 6 : 2,
         slidesToScroll: 1,
         autoplay: true,
         speed: 4000,
@@ -43,7 +43,7 @@ export default function Parceiros() {
         <section id="parceiros" className="py-20 overflow-hidden bg-white">
             <h1 className="w-full text-center my-6 text-2xl">Nossos parceiros:</h1>
 
-            <div className="bg-gray-100 py-10 hidden md:block shadow-inner">
+            {/* <div className="bg-gray-100 py-10 hidden md:block shadow-inner">
                 <Slider {...settings} key="slider_1">
                     {Array.from({ length: 13 }, (_, i) => (
                         <div key={i + 1 + "img1"} className="px-8 outline-none">
@@ -59,18 +59,18 @@ export default function Parceiros() {
                         </div>
                     ))}
                 </Slider>
-            </div>
+            </div> */}
 
-            <div className="bg-gray-100 py-10 md:hidden block space-y-10">
+            <div className="bg-gray-100 py-10 space-y-10">
                 <Slider {...settings} key="slider_2">
-                    {Array.from({ length: 7 }, (_, i) => (
-                        <div key={i + 1 + "img2"} className="px-8 outline-none">
-                            <div className="relative h-32 w-full">
+                    {Array.from({ length: 9 }, (_, i) => (
+                        <div key={i + 1 + "img2"} className="px-1 outline-none">
+                            <div className="relative h-28 w-full">
                                 <Image
                                     src={`/parceiros/parceiro_${i + 1}.png`}
                                     alt={`Parceiro ${i + 1}`}
                                     fill
-                                    sizes="(max-width: 768px), 25vw"
+                                    sizes="(max-width: 968px), 20vw"
                                     className="object-contain"
                                 />
                             </div>
@@ -79,14 +79,14 @@ export default function Parceiros() {
                 </Slider>
 
                 <Slider {...settings} rtl key="slider_3">
-                    {Array.from({ length: 6 }, (_, i) => (
-                        <div key={i + 7 + "img3"} className="px-8 outline-none">
-                            <div className="relative h-32 w-full">
+                    {Array.from({ length: 9 }, (_, i) => (
+                        <div key={i + 10 + "img3"} className="px-1 outline-none">
+                            <div className="relative h-28 w-full">
                                 <Image
-                                    src={`/parceiros/parceiro_${i + 7}.png`}
-                                    alt={`Parceiro ${i + 7}`}
+                                    src={`/parceiros/parceiro_${i + 10}.png`}
+                                    alt={`Parceiro ${i + 10}`}
                                     fill
-                                    sizes="(max-width: 768px), 25vw"
+                                    sizes="(max-width: 968px), 20vw"
                                     className="object-contain"
                                 />
                             </div>

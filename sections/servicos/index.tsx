@@ -41,7 +41,7 @@ export default function Servicos() {
 
                         <Button
                             className="text-white"
-                            onClick={"https://wa.me/5585999999999?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Umini"}
+                            onClick={"https://wa.me/5588988377485?text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Umini"}
                         >
                             Agendar reunião
                         </Button>
