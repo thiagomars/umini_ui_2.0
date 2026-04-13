@@ -52,7 +52,7 @@ export default function NossosNumeros() {
                         </div>
                         <p className="text-xl sm:text-2xl">de reais economizados com análises tarifárias</p>
                     </div>
-                    <p className="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-sm text-gray-400 mt-4">Dados atualizados em 19/02/2026</p>
+                    <p className="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-xs text-gray-400 mt-4">Dados atualizados em 06/04/2026</p>
                 </div>
             </>
         </Section>

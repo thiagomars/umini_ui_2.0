@@ -25,9 +25,10 @@ export default function HomePage() {
                     loop
                     muted
                     playsInline
+                    preload="auto"
                     className="absolute inset-0 w-full h-full object-cover"
-                    webkit-playsinline="true"
                 >
+                    <source src="/video-back-home.webm" type="video/webm" />
                     <source src="/video-back-home.mp4" type="video/mp4" />
                 </video>}
 

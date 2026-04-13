@@ -16,6 +16,9 @@ export default function Parceiros() {
         autoplaySpeed: 0,
         cssEase: "linear",
         rtl: false,
+        pauseOnDotsHover: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
         arrows: false,
         responsive: [
             {
@@ -63,7 +66,7 @@ export default function Parceiros() {
 
             <div className="bg-gray-100 py-10 space-y-10">
                 <Slider {...settings} key="slider_2">
-                    {Array.from({ length: 9 }, (_, i) => (
+                    {Array.from({ length: 11 }, (_, i) => (
                         <div key={i + 1 + "img2"} className="px-1 outline-none">
                             <div className="relative h-28 w-full">
                                 <Image
@@ -79,12 +82,12 @@ export default function Parceiros() {
                 </Slider>
 
                 <Slider {...settings} rtl key="slider_3">
-                    {Array.from({ length: 9 }, (_, i) => (
-                        <div key={i + 10 + "img3"} className="px-1 outline-none">
+                    {Array.from({ length: 11 }, (_, i) => (
+                        <div key={i + 12 + "img3"} className="px-1 outline-none">
                             <div className="relative h-28 w-full">
                                 <Image
-                                    src={`/parceiros/parceiro_${i + 10}.png`}
-                                    alt={`Parceiro ${i + 10}`}
+                                    src={`/parceiros/parceiro_${i + 12}.png`}
+                                    alt={`Parceiro ${i + 12}`}
                                     fill
                                     sizes="(max-width: 968px), 20vw"
                                     className="object-contain"
