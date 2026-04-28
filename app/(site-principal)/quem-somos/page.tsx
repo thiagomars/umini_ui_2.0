@@ -5,23 +5,20 @@ import Parceiros from "@/sections/parceiros";
 import Pilares from "@/sections/pilares";
 import Selo from "@/sections/selo";
 import SobreUmini from "@/sections/sobre";
+import Historia from "@/sections/historia";
+import Equipe from "@/sections/equipe";
+import Valores from "@/sections/valores";
+import CTA from "@/sections/cta";
 
 export default function Sobre() {
 
     return (
-        <div className="pt-44">
+        <div>
             <SobreUmini />
-            <Pilares />
-            <Selo />
-            <Parceiros />
-
-            <section id="numeros">
-                <h2 className="text-center text-4xl md:text-5xl font-bold pt-20 text-gray-700">Nossos números</h2>
-                <NossosNumeros />
-            </section>
-
-            <Existe />
-            <NossosClientes />
+            <Historia />
+            <Equipe />
+            <Valores />
+            <CTA />
         </div>
     )
 }

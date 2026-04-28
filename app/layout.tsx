@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { keywords } from "@/utils/keywords";
-import Navbar from "@/components/navbar";
-import SmoothScrolling from "@/components/SmoothScrolling";
-import Footer from "@/sections/footer";
 import GlobalLoading from "@/components/GlobalLoading";
 import { ToastContainer } from 'react-toastify';
 

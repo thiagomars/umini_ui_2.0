@@ -2,12 +2,10 @@
 
 import {
     Sheet,
-    SheetClose,
     SheetContent,
     SheetDescription,
     SheetFooter,
     SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { MenuIcon } from "lucide-react"
@@ -24,7 +22,11 @@ export default function Navbar() {
 
     // const darkSections = ['home'];
     // const isDarkTheme = darkSections.includes(activeSection);
-    const isBgWhite = !exited['home'] && activeSection === 'home';
+
+    const urlNavigate = window.location.pathname;
+    const isBgWhite = (!exited['home'] && activeSection === 'home' && urlNavigate === '/') ||
+        (urlNavigate == '/quem-somos' && (!exited['sobre'] || activeSection === 'sobre')) ||
+        (urlNavigate == '/quem-somos' && (exited['valores'] && (activeSection == 'cta' || activeSection == 'footer')));
 
     return (
         <header className="flex flex-row justify-between items-center gap-8 py-8 px-6 lg:px-10 fixed w-full z-20 top-0">
@@ -58,7 +60,7 @@ export default function Navbar() {
                         <li className="cursor-pointer p-1"><a href="#footer">Contato</a></li>
                     </ul>
 
-                    <Button onClick={"area-cliente"} className="w-fit">
+                    <Button onClick={"area-cliente"} className="w-fit text-white">
                         Área do Cliente
                     </Button>
 
@@ -69,27 +71,30 @@ export default function Navbar() {
                         <MenuIcon className="size-full" />
                     </SheetTrigger>
 
-                    <SheetContent side="right" className="data-[side=bottom]:max-h-[50vh] data-[side=top]:max-h-[50vh]">
+                    <SheetContent side="right" className="bg-gray-100 data-[side=bottom]:max-h-[50vh] data-[side=top]:max-h-[50vh]">
                         <SheetHeader className="justify-center">
                             <Image className="z-10 mt-4 ml-2" priority src="/hori_fundo-claro.png" alt="Umini Logo" width={150} height={0} />
                         </SheetHeader>
 
-                        <SheetDescription className="text-lg bg-gray-100 h-full">
+                        <SheetDescription className="text-lg h-full">
                             <ul className="divide-y">
                                 <li className="cursor-pointer p-4"><a href="/servicos">Serviços</a></li>
                                 <li className="cursor-pointer p-4"><a href="/#combos">Planos</a></li>
                                 {/* <li className="cursor-pointer p-4"><a href="/certificados">Certificados</a></li> */}
                                 <li className="cursor-pointer p-4"><a href="/quem-somos">Quem Somos</a></li>
                                 <li className="cursor-pointer p-4"><a href="#footer">Contato</a></li>
-                                <div className="p-6 w-full">
-                                    <Button onClick={"area-cliente"} className="w-full mt-2 text-white">
-                                        Área do Cliente
-                                    </Button>
-                                </div>
+                                <div></div>
                             </ul>
                         </SheetDescription>
 
-                        <SheetFooter className="text-center text-sm pb-4">
+                        <div className="p-6 w-full flex">
+                            <Button onClick={"area-cliente"} className="w-full text-center py-2.5 text-white">
+                                Área do Cliente
+                            </Button>
+                        </div>
+
+
+                        <SheetFooter className="text-center bg-white text-sm py-4">
                             <p>Todos os direitos reservados</p>
                             <p>© 2024, Todos os direitos reservados.</p>
                         </SheetFooter>
