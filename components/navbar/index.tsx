@@ -14,6 +14,7 @@ import Button from "../button"
 import { useActiveSection } from "@/hooks/useActiveSection"
 import { cn } from "@/lib/utils";
 import { useSectionExiting } from "@/hooks/useSectionExiting";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
 
@@ -23,10 +24,10 @@ export default function Navbar() {
     // const darkSections = ['home'];
     // const isDarkTheme = darkSections.includes(activeSection);
 
-    const urlNavigate = window.location.pathname;
-    const isBgWhite = (!exited['home'] && activeSection === 'home' && urlNavigate === '/') ||
-        (urlNavigate == '/quem-somos' && (!exited['sobre'] || activeSection === 'sobre')) ||
-        (urlNavigate == '/quem-somos' && (exited['valores'] && (activeSection == 'cta' || activeSection == 'footer')));
+    const pathname = usePathname();
+    const isBgWhite = (!exited['home'] && activeSection === 'home' && pathname === '/') ||
+        (pathname == '/quem-somos' && (!exited['sobre'] || activeSection === 'sobre')) ||
+        (pathname == '/quem-somos' && (exited['valores'] && (activeSection == 'cta' || activeSection == 'footer')));
 
     return (
         <header className="flex flex-row justify-between items-center gap-8 py-8 px-6 lg:px-10 fixed w-full z-20 top-0">
@@ -45,8 +46,8 @@ export default function Navbar() {
                 width={150}
                 height={0}
                 onClick={() => {
-                    if (window.location.pathname?.replace("/", "") != "")
-                        window.location.pathname = "/"
+                    if (pathname?.replace("/", "") != "")
+                        window.location.href = "/"
                 }}
             />
 
