@@ -133,7 +133,7 @@ export default function Equipe() {
             >
                 {/* Header fixo */}
                 <BoxView delay={400}>
-                    <div className="pt-28 md:pt-36 pb-6 md:pb-8 px-8 md:px-16 shrink-0">
+                    <div className="pt-28 md:pt-32 pb-6 md:pb-8 px-8 md:px-16 shrink-0">
                         <p className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 text-gray-700">
                             Quem faz a Umini acontecer
                         </p>
