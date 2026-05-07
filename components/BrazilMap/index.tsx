@@ -5,6 +5,7 @@ import ReactECharts from 'echarts-for-react';
 import * as echarts from 'echarts';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { cn } from '@/lib/utils';
+import { getMostRecentSundayFormatted } from '@/utils/mostSunday';
 
 const BrazilMap = () => {
     const mobile = useIsMobile();
@@ -102,6 +103,8 @@ const BrazilMap = () => {
 
     if (!mapData) return <div>...</div>;
 
+    const mostRecentSundayDate = getMostRecentSundayFormatted();
+
     return (
         <div>
             <div className='relative'>
@@ -120,7 +123,7 @@ const BrazilMap = () => {
                     }}
                 />
 
-                <p className="z-10 w-1/2 absolute bottom-2 right-0 text-right text-xs text-gray-400">Dados atualizados em 06/04/2026</p>
+                <p className="z-10 w-1/2 absolute bottom-2 right-0 text-right text-xs text-gray-400">Dados atualizados em {mostRecentSundayDate}</p>
             </div>
 
             <div className={cn(

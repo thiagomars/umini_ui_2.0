@@ -1,8 +1,10 @@
 import ScrollCounter from "@/components/contador";
 import Section from "@/components/section";
+import { getMostRecentSundayFormatted } from "@/utils/mostSunday";
 import Image from "next/image";
 
 export default function NossosNumeros() {
+    const mostRecentSundayDate = getMostRecentSundayFormatted();
 
     return (
         <Section className="flex flex-col gap-20 md:px-32 lg:px-28 xl:px-20 2xl:px-28 px-10 py-20">
@@ -52,7 +54,7 @@ export default function NossosNumeros() {
                         </div>
                         <p className="text-xl sm:text-2xl">de reais economizados com análises tarifárias</p>
                     </div>
-                    <p className="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-xs text-gray-400 mt-4">Dados atualizados em 06/04/2026</p>
+                    <p className="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-xs text-gray-400 mt-4">Dados atualizados em {mostRecentSundayDate}</p>
                 </div>
             </>
         </Section>
