@@ -1,0 +1,432 @@
+[
+    {
+        "tituloCard": "Projetos Fotovoltaicos",
+        "badge": "Energia Solar",
+        "iconImage": "/fotovoltaicos.png",
+        "heroTitulo": "Projetos fotovoltaicos completos para homologação segura e instalação eficiente.",
+        "heroSubtitulo": "Dimensionamento, proteção, documentação e compatibilização técnica com foco em aprovação rápida e máxima confiabilidade.",
+        "imagemPrincipal": "/project/proje5.png",
+        "entregamos": [
+            "Diagrama unifilar",
+            "Memorial descritivo",
+            "ART",
+            "Dimensionamento completo",
+            "String box e proteção",
+            "Homologação junto à concessionária",
+            "Análise de inversores",
+            "Layout fotovoltaico",
+            "Compatibilização normativa",
+            "Lista de materiais"
+        ],
+        "destaquesTecnicos": [
+            "Proteções CA e CC corretamente dimensionadas",
+            "Compatibilização com padrão da concessionária",
+            "Verificação de queda de tensão",
+            "Análise de geração",
+            "Distribuição otimizada das strings"
+        ],
+        "etapas": [
+            "Recebimento das informações",
+            "Análise técnica",
+            "Desenvolvimento do projeto",
+            "Revisão de engenharia",
+            "Emissão de ART",
+            "Homologação",
+            "Entrega final"
+        ],
+        "problemas": [
+            "Reprovação na concessionária",
+            "Sobredimensionamento de cabos",
+            "Proteções incorretas",
+            "Erros de string",
+            "Problemas de aterramento",
+            "Queda excessiva de tensão",
+            "Incompatibilidade normativa"
+        ],
+        "diferenciais": [
+            "Engenharia especializada",
+            "Atendimento técnico rápido",
+            "Compatibilização completa",
+            "Experiência em concessionárias",
+            "Projetos organizados e padronizados",
+            "Suporte pós-entrega",
+            "Comunicação clara com integradores"
+        ],
+        "normas": ["NBR 16690", "NBR 5410", "NR10", "Padrões da concessionária", "Requisitos de homologação"],
+        "ctaTitulo": "Pronto para um projeto seguro e profissional?",
+        "ctaTexto": "Transforme sua instalação em um projeto aprovado com agilidade e confiabilidade.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20fotovoltaicos"
+    },
+    {
+        "tituloCard": "Projetos de subestações elétricas",
+        "badge": "Média Tensão",
+        "iconImage": "/subestacao.png",
+        "heroTitulo": "Projetos de subestações elétricas com segurança, precisão e aprovação garantida.",
+        "heroSubtitulo": "Desenvolvimento completo de subestações aéreas e abrigadas com foco em proteção, seletividade, confiabilidade operacional e conformidade com concessionárias.",
+        "imagemPrincipal": "/project/proje4.jpeg",
+        "entregamos": [
+            "Diagrama unifilar MT/BT",
+            "Memorial descritivo",
+            "ART",
+            "Estudo de demanda",
+            "Dimensionamento do transformador",
+            "Proteção e seletividade",
+            "Malha de aterramento",
+            "Layout da subestação",
+            "Lista de materiais",
+            "Homologação junto à concessionária"
+        ],
+        "destaquesTecnicos": [
+            "Coordenação e seletividade",
+            "Proteção contra curto-circuito",
+            "Dimensionamento conforme demanda",
+            "Compatibilização com normas da concessionária",
+            "Segurança operacional",
+            "Facilidade de manutenção",
+            "Confiabilidade energética"
+        ],
+        "etapas": [
+            "Levantamento de carga",
+            "Análise da concessionária",
+            "Desenvolvimento do projeto",
+            "Estudos elétricos",
+            "Revisão técnica",
+            "ART e documentação",
+            "Homologação",
+            "Entrega final"
+        ],
+        "problemas": [
+            "Reprovação da concessionária",
+            "Transformador subdimensionado",
+            "Proteções incorretas",
+            "Falta de seletividade",
+            "Sobrecarga do sistema",
+            "Aterramento inadequado",
+            "Risco operacional",
+            "Quedas excessivas de tensão"
+        ],
+        "diferenciais": [
+            "Experiência com concessionárias",
+            "Projetos organizados e padronizados",
+            "Engenharia especializada em média tensão",
+            "Compatibilização completa",
+            "Agilidade na documentação",
+            "Suporte técnico pós-entrega",
+            "Atendimento consultivo"
+        ],
+        "normas": ["NBR 14039", "NBR 5410", "NBR 5419", "NR10", "Padrões Enel", "Critérios da concessionária local"],
+        "ctaTitulo": "Engenharia de média tensão com foco em segurança e aprovação rápida.",
+        "ctaTexto": "Projetos desenvolvidos para garantir desempenho, segurança e conformidade com as concessionárias.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20de%20subestacoes"
+    },
+    {
+        "tituloCard": "Projetos de centros de medição",
+        "badge": "Medição Elétrica",
+        "iconImage": "/fotovoltaicos.png",
+        "heroTitulo": "Projetos de centros de medição organizados, seguros e prontos para aprovação.",
+        "heroSubtitulo": "Padronização completa de medições elétricas para condomínios, comércios, indústrias e empreendimentos multifamiliares, seguindo rigorosamente os critérios da concessionária.",
+        "imagemPrincipal": "/project/proje3.jpeg",
+        "entregamos": [
+            "Diagrama unifilar",
+            "Memorial descritivo",
+            "ART",
+            "Dimensionamento de barramentos",
+            "Distribuição de cargas",
+            "Padronização concessionária",
+            "Lista de materiais",
+            "Detalhamento construtivo",
+            "Layout do centro de medição",
+            "Homologação completa"
+        ],
+        "destaquesTecnicos": [
+            "Organização padronizada",
+            "Facilidade de manutenção",
+            "Segurança operacional",
+            "Distribuição eficiente",
+            "Identificação clara dos circuitos",
+            "Compatibilidade com concessionária",
+            "Expansão futura simplificada"
+        ],
+        "etapas": [
+            "Levantamento das unidades consumidoras",
+            "Definição da demanda",
+            "Compatibilização com concessionária",
+            "Desenvolvimento do projeto",
+            "Revisão técnica",
+            "Emissão de ART",
+            "Homologação",
+            "Entrega final"
+        ],
+        "problemas": [
+            "Reprovação pela concessionária",
+            "Falta de espaço nos painéis",
+            "Aquecimento excessivo",
+            "Má organização dos medidores",
+            "Barramentos subdimensionados",
+            "Dificuldade de manutenção",
+            "Expansão inviável",
+            "Erros de identificação"
+        ],
+        "diferenciais": [
+            "Projetos organizados e padronizados",
+            "Compatibilização completa",
+            "Clareza documental",
+            "Agilidade na aprovação",
+            "Engenharia especializada",
+            "Suporte técnico",
+            "Compatibilidade com expansão futura"
+        ],
+        "normas": ["NBR 5410", "NR10", "Padrões da concessionária", "Normas de entrada de serviço", "Critérios Enel"],
+        "ctaTitulo": "Medição organizada, aprovada e sem retrabalho.",
+        "ctaTexto": "Projetos de medição organizados para garantir segurança, padronização e aprovação sem retrabalho.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20centros%20de%20medi%C3%A7%C3%A3o"
+    },
+    {
+        "tituloCard": "Projetos de SPDA",
+        "badge": "Proteção Atmosférica",
+        "iconImage": "/subestacao.png",
+        "heroTitulo": "Projetos de SPDA com proteção completa contra descargas atmosféricas.",
+        "heroSubtitulo": "Sistemas de proteção desenvolvidos conforme a NBR 5419, com análise de risco, captação, descidas, aterramento e equipotencialização para máxima segurança da edificação.",
+        "imagemPrincipal": "/project/proje2.jpeg",
+        "entregamos": [
+            "Análise de risco",
+            "Memorial descritivo",
+            "ART",
+            "Projeto de captação",
+            "Projeto de descidas",
+            "Projeto de aterramento",
+            "Equipotencialização",
+            "Detalhamento construtivo",
+            "Lista de materiais",
+            "Compatibilização normativa"
+        ],
+        "destaquesTecnicos": [
+            "Proteção contra descargas atmosféricas",
+            "Redução de riscos estruturais",
+            "Proteção de pessoas e equipamentos",
+            "Equipotencialização completa",
+            "Compatibilidade com a edificação",
+            "Aterramento eficiente",
+            "Conformidade com NBR 5419"
+        ],
+        "etapas": [
+            "Levantamento da edificação",
+            "Análise de risco",
+            "Definição do nível de proteção",
+            "Desenvolvimento do projeto",
+            "Compatibilização técnica",
+            "Emissão de ART",
+            "Entrega da documentação",
+            "Suporte técnico"
+        ],
+        "problemas": [
+            "Danos por descargas atmosféricas",
+            "Queima de equipamentos",
+            "Falhas de aterramento",
+            "Tensões perigosas",
+            "Riscos à integridade física",
+            "Incompatibilidade normativa",
+            "Descidas inadequadas",
+            "Equipotencialização incorreta"
+        ],
+        "diferenciais": [
+            "Projetos conforme NBR 5419",
+            "Engenharia especializada",
+            "Compatibilização arquitetônica",
+            "Clareza técnica",
+            "Projetos organizados",
+            "Segurança operacional",
+            "Suporte técnico especializado"
+        ],
+        "normas": ["NBR 5419", "NBR 5410", "NR10", "Critérios de aterramento", "Normas complementares de segurança"],
+        "ctaTitulo": "Proteja estruturas, equipamentos e pessoas.",
+        "ctaTexto": "Projetos de SPDA desenvolvidos por engenharia especializada, com foco em segurança normativa.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20de%20SPDA"
+    },
+    {
+        "tituloCard": "Projetos de eletrificação de loteamentos",
+        "badge": "Infraestrutura Urbana",
+        "iconImage": "/fotovoltaicos.png",
+        "heroTitulo": "Projetos de eletrificação de loteamentos com planejamento, padronização e viabilidade técnica.",
+        "heroSubtitulo": "Desenvolvimento completo de infraestrutura elétrica urbana e rural, incluindo redes de distribuição, iluminação pública, transformadores, medições e compatibilização com concessionárias.",
+        "imagemPrincipal": "/project/proje1.jpeg",
+        "entregamos": [
+            "Projeto de rede MT e BT",
+            "Memorial descritivo",
+            "ART",
+            "Dimensionamento de demanda",
+            "Projeto de iluminação pública",
+            "Transformadores",
+            "Posteamento",
+            "Centro de medição",
+            "Lista de materiais",
+            "Homologação junto à concessionária"
+        ],
+        "destaquesTecnicos": [
+            "Distribuição eficiente de energia",
+            "Expansão planejada",
+            "Compatibilidade urbana",
+            "Redução de perdas",
+            "Segurança operacional",
+            "Padronização concessionária",
+            "Viabilidade técnica e econômica"
+        ],
+        "etapas": [
+            "Levantamento urbanístico",
+            "Estudo de demanda",
+            "Compatibilização com concessionária",
+            "Desenvolvimento da rede elétrica",
+            "Projeto de iluminação pública",
+            "Revisão técnica",
+            "Emissão de ART",
+            "Homologação e entrega"
+        ],
+        "problemas": [
+            "Reprovação da concessionária",
+            "Subdimensionamento da rede",
+            "Queda excessiva de tensão",
+            "Expansão inviável",
+            "Posteamento inadequado",
+            "Iluminação insuficiente",
+            "Custos elevados de implantação",
+            "Sobrecarga futura"
+        ],
+        "diferenciais": [
+            "Compatibilização completa",
+            "Engenharia especializada",
+            "Planejamento urbano elétrico",
+            "Projetos organizados",
+            "Agilidade documental",
+            "Clareza técnica",
+            "Suporte técnico consultivo"
+        ],
+        "normas": ["NBR 5410", "NBR 14039", "Padrões da concessionária", "Normas de iluminação pública", "Critérios de distribuição urbana"],
+        "ctaTitulo": "Infraestrutura elétrica planejada para crescimento seguro.",
+        "ctaTexto": "Infraestrutura elétrica planejada para crescimento seguro, eficiente e aprovado pelas concessionárias.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20eletrifica%C3%A7%C3%A3o%20de%20loteamentos"
+    },
+    {
+        "tituloCard": "Gestão de faturas – Mercado Livre e Mercado Cativo",
+        "badge": "Gestão Energética",
+        "iconImage": "/economia.png",
+        "heroTitulo": "Gestão inteligente de faturas de energia com foco em economia e controle.",
+        "heroSubtitulo": "Analisamos contratos, tarifas, demandas e consumo para identificar oportunidades reais de redução de custos no Mercado Livre e no Mercado Cativo.",
+        "imagemPrincipal": "/project/proje5.png",
+        "entregamos": [
+            "Análise de faturas",
+            "Diagnóstico tarifário",
+            "Gestão de demanda",
+            "Identificação de cobranças indevidas",
+            "Comparativo Mercado Livre x Cativo",
+            "Relatórios técnicos",
+            "Indicadores de consumo",
+            "Estratégias de economia",
+            "Acompanhamento mensal",
+            "Consultoria energética"
+        ],
+        "destaquesTecnicos": [
+            "Redução de custos energéticos",
+            "Identificação de desperdícios",
+            "Controle de demanda contratada",
+            "Otimização tarifária",
+            "Monitoramento de consumo",
+            "Análise estratégica de contratos",
+            "Gestão energética inteligente"
+        ],
+        "etapas": [
+            "Recebimento das faturas",
+            "Análise técnica e tarifária",
+            "Diagnóstico energético",
+            "Identificação de oportunidades",
+            "Emissão de relatório",
+            "Definição de estratégias",
+            "Acompanhamento contínuo",
+            "Revisões periódicas"
+        ],
+        "problemas": [
+            "Pagamento excessivo de energia",
+            "Demanda contratada incorreta",
+            "Multas por ultrapassagem",
+            "Baixo fator de potência",
+            "Cobranças indevidas",
+            "Contratos desvantajosos",
+            "Consumo ineficiente",
+            "Falta de previsibilidade financeira"
+        ],
+        "diferenciais": [
+            "Engenharia especializada",
+            "Relatórios claros e objetivos",
+            "Análises estratégicas",
+            "Acompanhamento contínuo",
+            "Identificação real de economia",
+            "Atendimento consultivo",
+            "Comunicação simplificada"
+        ],
+        "normas": ["ANEEL", "Resoluções tarifárias", "Regras do Mercado Livre", "Estrutura tarifária", "Modalidades horárias", "Critérios de demanda e fator de potência"],
+        "ctaTitulo": "Transforme dados de consumo em economia real.",
+        "ctaTexto": "Transforme dados de consumo em decisões estratégicas e economia comprovada.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20gest%C3%A3o%20de%20faturas"
+    },
+    {
+        "tituloCard": "Projetos elétricos internos",
+        "badge": "Instalações Elétricas",
+        "iconImage": "/subestacao.png",
+        "heroTitulo": "Projetos elétricos internos com segurança, eficiência e organização técnica.",
+        "heroSubtitulo": "Desenvolvimento completo de instalações elétricas residenciais, comerciais e industriais, com foco em desempenho, proteção, padronização e conformidade normativa.",
+        "imagemPrincipal": "/project/proje3.jpeg",
+        "entregamos": [
+            "Projeto elétrico completo",
+            "Diagramas unifilares",
+            "Dimensionamento de circuitos",
+            "Quadros elétricos",
+            "Projeto de iluminação",
+            "Tomadas e cargas especiais",
+            "Lista de materiais",
+            "Memorial descritivo",
+            "ART",
+            "Compatibilização técnica"
+        ],
+        "destaquesTecnicos": [
+            "Segurança elétrica",
+            "Distribuição eficiente",
+            "Proteção contra sobrecargas",
+            "Organização dos circuitos",
+            "Compatibilização arquitetônica",
+            "Eficiência energética",
+            "Facilidade de manutenção"
+        ],
+        "etapas": [
+            "Levantamento das necessidades",
+            "Análise das cargas",
+            "Desenvolvimento do projeto",
+            "Compatibilização técnica",
+            "Revisão de engenharia",
+            "Emissão de ART",
+            "Entrega da documentação",
+            "Suporte técnico"
+        ],
+        "problemas": [
+            "Sobrecarga de circuitos",
+            "Queda de tensão",
+            "Aquecimento de cabos",
+            "Dimensionamento incorreto",
+            "Falhas de proteção",
+            "Desorganização elétrica",
+            "Alto consumo energético",
+            "Retrabalho na obra"
+        ],
+        "diferenciais": [
+            "Projetos organizados",
+            "Clareza técnica",
+            "Compatibilização completa",
+            "Engenharia especializada",
+            "Documentação padronizada",
+            "Agilidade na entrega",
+            "Suporte técnico especializado"
+        ],
+        "normas": ["NBR 5410", "NR10", "Normas de iluminação", "Critérios de aterramento", "Padrões concessionária"],
+        "ctaTitulo": "Projetos elétricos feitos para durar e proteger.",
+        "ctaTexto": "Projetos elétricos internos desenvolvidos para garantir segurança, desempenho e organização em cada detalhe.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20eletricos%20internos"
+    }
+]

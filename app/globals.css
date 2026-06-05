@@ -131,6 +131,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* scrollbar-width: thin;
+  scrollbar-color: #686868 transparent; */
 }
 
 @layer utilities {
@@ -169,4 +171,28 @@ html {
 /* Garante que o container interno não force 100% da altura */
 .slider .slick-slide > div {
   height: auto !important;
+}
+
+/* 1. Largura da scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 2. O trilho (fundo da barra) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 15px;
+  margin: 75px 10px 15px 10px;
+  width: 120px;
+}
+
+/* 3. A alça (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 15px;
+}
+
+/* 4. Efeito ao passar o mouse na alça */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
 }
