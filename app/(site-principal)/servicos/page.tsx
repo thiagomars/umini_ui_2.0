@@ -4,7 +4,7 @@ import BoxOpaco from "@/components/BoxOpaco";
 import Button from "@/components/button";
 import { TextInput } from "@/components/input";
 import Section from "@/components/section";
-import ServicoModal, { type ServicoModalData } from "@/components/modais/servico";
+import ServicoModal, { type ServicoModalData } from "@/sections/servico-modal";
 import listaServicos from '@/database/servicos.json';
 import servicosModal from '@/database/servicos-modal.json';
 import { useState, useEffect } from "react";

@@ -5,7 +5,7 @@
         "iconImage": "/fotovoltaicos.png",
         "heroTitulo": "Projetos fotovoltaicos completos para homologação segura e instalação eficiente.",
         "heroSubtitulo": "Dimensionamento, proteção, documentação e compatibilização técnica com foco em aprovação rápida e máxima confiabilidade.",
-        "imagemPrincipal": "/project/proje5.png",
+        "pastaImagens": "fotovoltaico",
         "entregamos": [
             "Diagrama unifilar",
             "Memorial descritivo",
@@ -63,7 +63,7 @@
         "iconImage": "/subestacao.png",
         "heroTitulo": "Projetos de subestações elétricas com segurança, precisão e aprovação garantida.",
         "heroSubtitulo": "Desenvolvimento completo de subestações aéreas e abrigadas com foco em proteção, seletividade, confiabilidade operacional e conformidade com concessionárias.",
-        "imagemPrincipal": "/project/proje4.jpeg",
+        "pastaImagens": "subestacao",
         "entregamos": [
             "Diagrama unifilar MT/BT",
             "Memorial descritivo",
@@ -125,7 +125,7 @@
         "iconImage": "/fotovoltaicos.png",
         "heroTitulo": "Projetos de centros de medição organizados, seguros e prontos para aprovação.",
         "heroSubtitulo": "Padronização completa de medições elétricas para condomínios, comércios, indústrias e empreendimentos multifamiliares, seguindo rigorosamente os critérios da concessionária.",
-        "imagemPrincipal": "/project/proje3.jpeg",
+        "pastaImagens": "centro de medicao",
         "entregamos": [
             "Diagrama unifilar",
             "Memorial descritivo",
@@ -187,7 +187,7 @@
         "iconImage": "/subestacao.png",
         "heroTitulo": "Projetos de SPDA com proteção completa contra descargas atmosféricas.",
         "heroSubtitulo": "Sistemas de proteção desenvolvidos conforme a NBR 5419, com análise de risco, captação, descidas, aterramento e equipotencialização para máxima segurança da edificação.",
-        "imagemPrincipal": "/project/proje2.jpeg",
+        "pastaImagens": "spda",
         "entregamos": [
             "Análise de risco",
             "Memorial descritivo",
@@ -249,7 +249,7 @@
         "iconImage": "/fotovoltaicos.png",
         "heroTitulo": "Projetos de eletrificação de loteamentos com planejamento, padronização e viabilidade técnica.",
         "heroSubtitulo": "Desenvolvimento completo de infraestrutura elétrica urbana e rural, incluindo redes de distribuição, iluminação pública, transformadores, medições e compatibilização com concessionárias.",
-        "imagemPrincipal": "/project/proje1.jpeg",
+        "pastaImagens": "distribuicao",
         "entregamos": [
             "Projeto de rede MT e BT",
             "Memorial descritivo",
@@ -311,7 +311,7 @@
         "iconImage": "/economia.png",
         "heroTitulo": "Gestão inteligente de faturas de energia com foco em economia e controle.",
         "heroSubtitulo": "Analisamos contratos, tarifas, demandas e consumo para identificar oportunidades reais de redução de custos no Mercado Livre e no Mercado Cativo.",
-        "imagemPrincipal": "/project/proje5.png",
+        "pastaImagens": "gestao de faturas",
         "entregamos": [
             "Análise de faturas",
             "Diagnóstico tarifário",
@@ -373,7 +373,7 @@
         "iconImage": "/subestacao.png",
         "heroTitulo": "Projetos elétricos internos com segurança, eficiência e organização técnica.",
         "heroSubtitulo": "Desenvolvimento completo de instalações elétricas residenciais, comerciais e industriais, com foco em desempenho, proteção, padronização e conformidade normativa.",
-        "imagemPrincipal": "/project/proje3.jpeg",
+        "pastaImagens": "",
         "entregamos": [
             "Projeto elétrico completo",
             "Diagramas unifilares",
