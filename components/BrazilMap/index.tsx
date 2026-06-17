@@ -135,10 +135,10 @@ const BrazilMap = () => {
                 <div className='text-sm overflow-hidden bg-gray-50 p-4 rounded-xl shadow-md'>
                     <p className='font-bold text-primary text-base mb-2'>{item?.name}</p>
                     <div className='space-y-1'>
-                        <p>{item?.qtdFotovoltaico} projetos fotovoltaicos</p>
-                        <p>{item?.qtdEletrico} projetos elétricos</p>
-                        <p>R$ {item?.economizados?.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} economizados com Gestão Energética</p>
-                        <p>{item?.homologados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kW homologados</p>
+                        <p>{item?.qtdFotovoltaico} Projetos Fotovoltaicos</p>
+                        <p>{item?.qtdEletrico} Projetos Elétricos</p>
+                        <p>R$ {item?.economizados?.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} Economizados com Gestão Energética</p>
+                        <p>{item?.homologados?.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kW Homologados</p>
                     </div>
                 </div>
             </div>
