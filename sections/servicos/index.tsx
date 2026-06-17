@@ -32,7 +32,7 @@ export default function Servicos() {
                                 <li>Projetos Elétricos Internos</li>
                             </BoxView>
                             <BoxView>
-                                <li>Gestão de Faturas- Mercado Cativo e Mercado Livre</li>
+                                <li>Gestão de Faturas - Mercado Cativo e Mercado Livre</li>
                             </BoxView>
                             <BoxView>
                                 <li>Análises Tarifárias</li>

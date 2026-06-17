@@ -44,11 +44,11 @@ export default function HomePage() {
                         <p className="text-2xl lg:w-1/2 drop-shadow-lg">Soluções que geram economia, confiança e desempenho.</p>
 
                         <div className="w-full lg:w-3/5 flex flex-row lg:justify-start justify-center items-center flex-wrap gap-x-2 gap-y-3">
-                            <Button onClick="#cadastroPlataforma">Agendar reunião</Button>
-                            <Button onClick="/servicos">Nossos serviços</Button>
-                            <Button onClick="#servicos">Calcular Potência do Kit fotovoltaico</Button>
-                            <Button onClick="#combos">Combos de projeto</Button>
-                            <Button onClick="area-cliente">Área do cliente</Button>
+                            <Button onClick="#cadastroPlataforma">Agendar Reunião</Button>
+                            <Button onClick="/servicos">Nossos Serviços</Button>
+                            <Button onClick="#servicos">Calcular Potência do Kit Fotovoltaico</Button>
+                            <Button onClick="#combos">Combos de Projeto</Button>
+                            <Button onClick="area-cliente">Área do Cliente</Button>
                         </div>
                     </div>
                 </Section>
