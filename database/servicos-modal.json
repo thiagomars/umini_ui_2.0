@@ -52,13 +52,19 @@
             "Suporte pós-entrega",
             "Comunicação clara com integradores"
         ],
-        "normas": ["NBR 16690", "NBR 5410", "NR10", "Padrões da concessionária", "Requisitos de homologação"],
+        "normas": [
+            "NBR 16690",
+            "NBR 5410",
+            "NR10",
+            "Padrões da concessionária",
+            "Requisitos de homologação"
+        ],
         "ctaTitulo": "Pronto para um projeto seguro e profissional?",
         "ctaTexto": "Transforme sua instalação em um projeto aprovado com agilidade e confiabilidade.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20fotovoltaicos"
     },
     {
-        "tituloCard": "Projetos de subestações elétricas",
+        "tituloCard": "Projetos de Subestações Elétricas",
         "badge": "Média Tensão",
         "iconImage": "/subestacao.png",
         "heroTitulo": "Projetos de subestações elétricas com segurança, precisão e aprovação garantida.",
@@ -114,13 +120,20 @@
             "Suporte técnico pós-entrega",
             "Atendimento consultivo"
         ],
-        "normas": ["NBR 14039", "NBR 5410", "NBR 5419", "NR10", "Padrões Enel", "Critérios da concessionária local"],
+        "normas": [
+            "NBR 14039",
+            "NBR 5410",
+            "NBR 5419",
+            "NR10",
+            "Padrões Enel",
+            "Critérios da concessionária local"
+        ],
         "ctaTitulo": "Engenharia de média tensão com foco em segurança e aprovação rápida.",
         "ctaTexto": "Projetos desenvolvidos para garantir desempenho, segurança e conformidade com as concessionárias.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20de%20subestacoes"
     },
     {
-        "tituloCard": "Projetos de centros de medição",
+        "tituloCard": "Projetos de Centros de Medição",
         "badge": "Medição Elétrica",
         "iconImage": "/fotovoltaicos.png",
         "heroTitulo": "Projetos de centros de medição organizados, seguros e prontos para aprovação.",
@@ -176,7 +189,13 @@
             "Suporte técnico",
             "Compatibilidade com expansão futura"
         ],
-        "normas": ["NBR 5410", "NR10", "Padrões da concessionária", "Normas de entrada de serviço", "Critérios Enel"],
+        "normas": [
+            "NBR 5410",
+            "NR10",
+            "Padrões da concessionária",
+            "Normas de entrada de serviço",
+            "Critérios Enel"
+        ],
         "ctaTitulo": "Medição organizada, aprovada e sem retrabalho.",
         "ctaTexto": "Projetos de medição organizados para garantir segurança, padronização e aprovação sem retrabalho.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20centros%20de%20medi%C3%A7%C3%A3o"
@@ -238,13 +257,19 @@
             "Segurança operacional",
             "Suporte técnico especializado"
         ],
-        "normas": ["NBR 5419", "NBR 5410", "NR10", "Critérios de aterramento", "Normas complementares de segurança"],
+        "normas": [
+            "NBR 5419",
+            "NBR 5410",
+            "NR10",
+            "Critérios de aterramento",
+            "Normas complementares de segurança"
+        ],
         "ctaTitulo": "Proteja estruturas, equipamentos e pessoas.",
         "ctaTexto": "Projetos de SPDA desenvolvidos por engenharia especializada, com foco em segurança normativa.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20de%20SPDA"
     },
     {
-        "tituloCard": "Projetos de eletrificação de loteamentos",
+        "tituloCard": "Projetos de Eletrificação de Loteamentos",
         "badge": "Infraestrutura Urbana",
         "iconImage": "/fotovoltaicos.png",
         "heroTitulo": "Projetos de eletrificação de loteamentos com planejamento, padronização e viabilidade técnica.",
@@ -300,13 +325,19 @@
             "Clareza técnica",
             "Suporte técnico consultivo"
         ],
-        "normas": ["NBR 5410", "NBR 14039", "Padrões da concessionária", "Normas de iluminação pública", "Critérios de distribuição urbana"],
+        "normas": [
+            "NBR 5410",
+            "NBR 14039",
+            "Padrões da concessionária",
+            "Normas de iluminação pública",
+            "Critérios de distribuição urbana"
+        ],
         "ctaTitulo": "Infraestrutura elétrica planejada para crescimento seguro.",
         "ctaTexto": "Infraestrutura elétrica planejada para crescimento seguro, eficiente e aprovado pelas concessionárias.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20eletrifica%C3%A7%C3%A3o%20de%20loteamentos"
     },
     {
-        "tituloCard": "Gestão de faturas – Mercado Livre e Mercado Cativo",
+        "tituloCard": "Gestão de Faturas – Mercado Livre e Mercado Cativo",
         "badge": "Gestão Energética",
         "iconImage": "/economia.png",
         "heroTitulo": "Gestão inteligente de faturas de energia com foco em economia e controle.",
@@ -362,13 +393,20 @@
             "Atendimento consultivo",
             "Comunicação simplificada"
         ],
-        "normas": ["ANEEL", "Resoluções tarifárias", "Regras do Mercado Livre", "Estrutura tarifária", "Modalidades horárias", "Critérios de demanda e fator de potência"],
+        "normas": [
+            "ANEEL",
+            "Resoluções tarifárias",
+            "Regras do Mercado Livre",
+            "Estrutura tarifária",
+            "Modalidades horárias",
+            "Critérios de demanda e fator de potência"
+        ],
         "ctaTitulo": "Transforme dados de consumo em economia real.",
         "ctaTexto": "Transforme dados de consumo em decisões estratégicas e economia comprovada.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20gest%C3%A3o%20de%20faturas"
     },
     {
-        "tituloCard": "Projetos elétricos internos",
+        "tituloCard": "Projetos Elétricos Internos",
         "badge": "Instalações Elétricas",
         "iconImage": "/subestacao.png",
         "heroTitulo": "Projetos elétricos internos com segurança, eficiência e organização técnica.",
@@ -424,9 +462,217 @@
             "Agilidade na entrega",
             "Suporte técnico especializado"
         ],
-        "normas": ["NBR 5410", "NR10", "Normas de iluminação", "Critérios de aterramento", "Padrões concessionária"],
+        "normas": [
+            "NBR 5410",
+            "NR10",
+            "Normas de iluminação",
+            "Critérios de aterramento",
+            "Padrões concessionária"
+        ],
         "ctaTitulo": "Projetos elétricos feitos para durar e proteger.",
         "ctaTexto": "Projetos elétricos internos desenvolvidos para garantir segurança, desempenho e organização em cada detalhe.",
         "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20projetos%20eletricos%20internos"
+    },
+    {
+        "tituloCard": "Análises Tarifárias",
+        "badge": "Gestão Energética",
+        "iconImage": "/economia.png",
+        "heroTitulo": "Descubra oportunidades de economia escondidas na sua fatura de energia.",
+        "heroSubtitulo": "Analisamos contratos, modalidades tarifárias, demanda, fator de potência e perfil de consumo para identificar oportunidades reais de redução de custos.",
+        "pastaImagens": "analises tarifarias",
+        "entregamos": [
+            "Diagnóstico tarifário completo",
+            "Revisão de demanda contratada",
+            "Análise de ultrapassagens",
+            "Avaliação de fator de potência",
+            "Simulação tarifária",
+            "Comparação de modalidades",
+            "Relatório técnico",
+            "Plano de ação",
+            "Estimativa de economia",
+            "Apresentação dos resultados"
+        ],
+        "destaquesTecnicos": [
+            "Identificação de cobranças indevidas",
+            "Otimização de demanda contratada",
+            "Correção de modalidade tarifária",
+            "Redução de multas e excedentes",
+            "Análise de sazonalidade",
+            "Comparativos financeiros",
+            "Apoio na tomada de decisão"
+        ],
+        "etapas": [
+            "Recebimento das faturas",
+            "Levantamento histórico",
+            "Diagnóstico técnico",
+            "Simulações tarifárias",
+            "Identificação de oportunidades",
+            "Relatório de resultados",
+            "Apresentação ao cliente",
+            "Implementação das melhorias"
+        ],
+        "problemas": [
+            "Demanda contratada acima do necessário",
+            "Multas por ultrapassagem",
+            "Baixo fator de potência",
+            "Modalidade tarifária inadequada",
+            "Custos ocultos",
+            "Consumo ineficiente",
+            "Perda de competitividade",
+            "Falta de previsibilidade financeira"
+        ],
+        "diferenciais": [
+            "Engenharia especializada em energia",
+            "Relatórios claros e objetivos",
+            "Simulações reais de economia",
+            "Análise baseada em dados",
+            "Visão técnica e financeira",
+            "Recomendações práticas",
+            "Atendimento consultivo"
+        ],
+        "normas": [
+            "ANEEL",
+            "Resoluções tarifárias",
+            "Modalidades horárias",
+            "Critérios de demanda",
+            "Fator de potência"
+        ],
+        "ctaTitulo": "Sua empresa pode estar pagando mais do que deveria.",
+        "ctaTexto": "Sua empresa pode estar pagando mais do que deveria pela energia elétrica. Descubra quanto é possível economizar.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20an%C3%A1lises%20tarif%C3%A1rias"
+    },
+    {
+        "tituloCard": "Modelagem 3D",
+        "badge": "Engenharia Visual",
+        "iconImage": "/subestacao.png",
+        "heroTitulo": "Visualize seu projeto antes da execução com modelagens 3D realistas.",
+        "heroSubtitulo": "Transformamos projetos elétricos, fotovoltaicos e de infraestrutura em modelos tridimensionais detalhados, facilitando análises, apresentações, compatibilizações e tomadas de decisão.",
+        "pastaImagens": "modelagens 3d",
+        "entregamos": [
+            "Modelagem 3D",
+            "Renderização realista",
+            "Compatibilização visual",
+            "Estudos de implantação",
+            "Vistas técnicas",
+            "Imagens para aprovação",
+            "Animações de projeto",
+            "Apresentações comerciais",
+            "Revisões de layout",
+            "Arquivos digitais"
+        ],
+        "destaquesTecnicos": [
+            "Visualização antecipada",
+            "Redução de erros",
+            "Melhor entendimento do projeto",
+            "Compatibilização entre disciplinas",
+            "Apresentações mais profissionais",
+            "Apoio à execução",
+            "Maior previsibilidade"
+        ],
+        "etapas": [
+            "Recebimento do projeto",
+            "Levantamento de informações",
+            "Modelagem tridimensional",
+            "Compatibilização técnica",
+            "Ajustes visuais",
+            "Renderização",
+            "Revisão final",
+            "Entrega dos arquivos"
+        ],
+        "problemas": [
+            "Interferências entre sistemas",
+            "Erros de implantação",
+            "Dificuldade de visualização",
+            "Retrabalho na obra",
+            "Problemas de espaço físico",
+            "Falhas de compatibilização",
+            "Dúvidas na execução",
+            "Apresentações pouco profissionais"
+        ],
+        "diferenciais": [
+            "Engenharia especializada",
+            "Modelagens técnicas precisas",
+            "Visual realista",
+            "Compatibilização completa",
+            "Alto nível de detalhamento",
+            "Apresentações profissionais",
+            "Suporte técnico"
+        ],
+        "normas": [
+            "BIM",
+            "NBR 6492",
+            "Padrões de compatibilização",
+            "Normas técnicas de projeto",
+            "Padrões de entrega digital"
+        ],
+        "ctaTitulo": "Enxergue seu projeto antes da execução.",
+        "ctaTexto": "Enxergue seu projeto antes da execução e tome decisões com muito mais segurança.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20modelagens%203D"
+    },
+    {
+        "tituloCard": "Serviço de Pós-Venda",
+        "badge": "Suporte Técnico",
+        "iconImage": "/fotovoltaicos.png",
+        "heroTitulo": "Suporte técnico contínuo para manter seus projetos sempre em dia.",
+        "heroSubtitulo": "Resolvemos demandas pós-homologação de forma rápida e organizada, reduzindo burocracias e garantindo tranquilidade para integradores e clientes finais.",
+        "pastaImagens": "servicos de pos vendas",
+        "entregamos": [
+            "Troca de titularidade",
+            "Alteração cadastral",
+            "Aumento de carga",
+            "Solicitação de vistoria",
+            "Correção documental",
+            "Regularizações",
+            "Acompanhamento de protocolos",
+            "Suporte técnico especializado"
+        ],
+        "destaquesTecnicos": [
+            "Resolução rápida de solicitações",
+            "Menos burocracia",
+            "Acompanhamento de processos",
+            "Atendimento especializado",
+            "Interface com concessionárias",
+            "Maior satisfação do cliente",
+            "Economia de tempo"
+        ],
+        "etapas": [
+            "Recebimento da solicitação",
+            "Análise documental",
+            "Preparação dos arquivos",
+            "Protocolo junto à concessionária",
+            "Acompanhamento técnico",
+            "Tratamento de pendências",
+            "Aprovação do processo",
+            "Entrega da solução"
+        ],
+        "problemas": [
+            "Perda de prazo",
+            "Documentação incorreta",
+            "Reprovação de solicitações",
+            "Retrabalho administrativo",
+            "Demora na concessionária",
+            "Falta de acompanhamento",
+            "Erros cadastrais",
+            "Insatisfação do cliente final"
+        ],
+        "diferenciais": [
+            "Equipe especializada",
+            "Atendimento rápido",
+            "Conhecimento regulatório",
+            "Histórico dos projetos",
+            "Acompanhamento completo",
+            "Comunicação simplificada",
+            "Suporte consultivo"
+        ],
+        "normas": [
+            "ANEEL",
+            "PRODIST",
+            "Normas da concessionária",
+            "Resoluções normativas",
+            "Procedimentos de distribuição"
+        ],
+        "ctaTitulo": "Deixe a burocracia com a Umini.",
+        "ctaTexto": "Deixe a burocracia com a Umini e mantenha seus clientes satisfeitos mesmo após a homologação.",
+        "whatsappTexto": "Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20p%C3%B3s-venda"
     }
 ]
