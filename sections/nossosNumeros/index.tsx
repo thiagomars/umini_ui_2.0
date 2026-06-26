@@ -47,8 +47,8 @@ export default function NossosNumeros() {
                         <div className="rounded-full size-14 shadow-md">
                             <Image className="z-10" priority src="/economia.png" alt="Umini Logo" width={100} height={100} />
                         </div>
-                        <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                            <span className="font-black text-5xl sm:text-7xl">R$ </span>
+                        <div className="text-5xl inline-flex mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
+                            <span className="text-5xl sm:text-6xl pr-2.5">R$ </span>
                             <ScrollCounter incrementar valor={280} duracao={3000} />
                             <span className="font-bold">K</span>
                         </div>
