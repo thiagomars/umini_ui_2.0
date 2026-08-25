@@ -18,7 +18,7 @@ export default function NossosNumeros() {
                             {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
                             <ScrollCounter incrementar valor={2626} duracao={3000} />
                         </div>
-                        <p className="text-xl sm:text-2xl">Projetos fotovoltaicos</p>
+                        <p className="text-xl sm:text-2xl">Projetos Fotovoltaicos</p>
                     </div>
 
                     <div className="xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
@@ -29,7 +29,7 @@ export default function NossosNumeros() {
                             {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
                             <ScrollCounter incrementar valor={18474} duracao={3000} />
                         </div>
-                        <p className="text-xl sm:text-2xl">kW homologados</p>
+                        <p className="text-xl sm:text-2xl">kW Homologados</p>
                     </div>
 
                     <div className="xl:aspect-square w-full p-6 rounded-[40px] bg-gray-50 border-2 border-gray-200 grid grid-rows-3 items-center-safe">
@@ -47,12 +47,12 @@ export default function NossosNumeros() {
                         <div className="rounded-full size-14 shadow-md">
                             <Image className="z-10" priority src="/economia.png" alt="Umini Logo" width={100} height={100} />
                         </div>
-                        <div className="text-5xl mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
-                            {/* <span className="font-black text-5xl sm:text-7xl">+</span> */}
+                        <div className="text-5xl inline-flex mt-4 sm:mt-0 sm:text-6xl font-bold text-gray-700/90">
+                            <span className="text-5xl sm:text-6xl pr-2.5">R$ </span>
                             <ScrollCounter incrementar valor={280} duracao={3000} />
                             <span className="font-bold">K</span>
                         </div>
-                        <p className="text-xl sm:text-2xl">de reais economizados com análises tarifárias</p>
+                        <p className="text-xl sm:text-2xl">Economizados com Análises Tarifárias</p>
                     </div>
                     <p className="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center text-xs text-gray-400 mt-4">Dados atualizados em {mostRecentSundayDate}</p>
                 </div>
