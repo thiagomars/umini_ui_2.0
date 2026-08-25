@@ -120,7 +120,7 @@ export default function Footer() {
 
 
                 <div className="text-secondary text-sm px-4 py-2 bg-white flex flex-col gap-1 justify-between items-center text-center">
-                    <p>Copyright © 2025 / Todos os direitos reservados.</p>
+                    <p>Copyright © 2026 / Todos os direitos reservados.</p>
                     <p>Desenvolvido por MarteSoftware</p>
                 </div>
             </section >
